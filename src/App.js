@@ -1,45 +1,30 @@
-import React, { useState } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import 'semantic-ui-css/semantic.min.css'
-import styled from 'styled-components'
-import { Sidebar, Segment, Menu, Transition, Icon, Header, Image, Divider } from 'semantic-ui-react'
+import React, { useState } from 'react'
+import ReactDOM from 'react-dom'
+import { HashRouter as Router, Route, Link, NavLink } from 'react-router-dom'
+import { CSSTransition } from 'react-transition-group'
 
-import Contact from './pages/Contact'
+// import { Container, Navbar, Nav } from 'react-bootstrap'
 import Home from './pages/Home'
 import Links from './pages/Links'
+import Contact from './pages/Contact'
 
 import NavBar from './components/NavBar'
+import { Container, Sidebar, Menu } from 'semantic-ui-react'
 
-import {
-  HashRouter as Router,
-  Switch,
-  Route,
-  Link,
-} from "react-router-dom";
+const routes = [
+  { path: '/', name: 'Home', Component: Home },
+  { path: '/links', name: 'Links', Component: Links },
+  { path: '/contact', name: 'Contact', Component: Contact },
+]
 
-import { Animate, AnimateKeyframes, AnimateGroup } from "react-simple-animate";
-import Hamburger from './components/Hamburger';
-import { AppRouter } from './AppRouter';
-
-function App() {
-
+export default function App() {
   const [visible, setVisible] = useState(false)
-
-  const AppContainer = styled.div`
-    max-height: 100vh;
-    overflow-x: scroll;
-    // padding: 0;
-    // margin: 0;
-  `
 
 
   return (
-    <div className="App">
-
-      <Router>
+    <Router>
+      <Route>
         <Sidebar.Pushable as='div'>
-
           <Sidebar
             as={Menu}
             animation='push'
@@ -56,15 +41,26 @@ function App() {
 
           <Sidebar.Pusher>
             <NavBar sideBarIsOpen={visible} setVisible={(e) => setVisible(e)} />
-            <AppRouter />
+            {routes.map(({ path, Component }) => (
+              <Route key={path} exact path={path}>
+                {({ match }) => (
+                  <CSSTransition
+                    in={match != null}
+                    timeout={300}
+                    classNames="page"
+                    unmountOnExit
+                  >
+                    <div className="page">
+                      <Component />
+                    </div>
+                  </CSSTransition>
+                )}
+              </Route>
+            ))}
           </Sidebar.Pusher>
         </Sidebar.Pushable>
-      </Router>
-
-
-
-    </div >
-  );
+      </Route>
+    </Router>
+  )
 }
 
-export default App;

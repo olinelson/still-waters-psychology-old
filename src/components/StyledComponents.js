@@ -21,6 +21,6 @@ export const JumboMessage = styled.div`
     background-color: rgba(0,0,0,0) !important;
     align-self: end;
     justify-self: center;
-    padding: 1rem;c
+    padding: 1rem;
 
 `

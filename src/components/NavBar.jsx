@@ -5,7 +5,7 @@ import { Link, withRouter } from 'react-router-dom'
 
 function NavBar(props) {
 
-    const sideBarIsOpen = props.sideBarIsOpen
+    console.log(props)
 
     const FixedMenu = styled(Menu)`
         z-index:1;
@@ -18,6 +18,7 @@ function NavBar(props) {
         position: fixed;
         width: 100vw;
         background-color: rgba(0,0,0,0) !important;
+        border: 2px solid red;
     `
     return <>
 
@@ -32,7 +33,7 @@ function NavBar(props) {
                 <Icon size="large" inverted name={props.sideBarIsOpen ? "close" : "bars"} onClick={() => props.setVisible(true)} />
             </Menu.Item>
         </Responsive >
-        <Responsive inverted secondary as={FixedMenu} fixed {...Responsive.onlyComputer}>
+        <Responsive inverted secondary as={FixedMenu}  {...Responsive.onlyComputer}>
             <Menu.Item as={Link} to='/' icon='home' name='home' />
             <Menu.Item as={Link} to="/contact" icon="mail" name='Contact' />
             <Menu.Item as={Link} to="/links" icon="chain" name='Links & Resources' />
