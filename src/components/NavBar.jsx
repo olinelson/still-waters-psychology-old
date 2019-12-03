@@ -5,8 +5,6 @@ import { Link, withRouter } from 'react-router-dom'
 
 function NavBar(props) {
 
-    console.log(props)
-
     const FixedMenu = styled(Menu)`
         z-index:1;
         position: fixed;
@@ -24,7 +22,7 @@ function NavBar(props) {
 
 
         <Responsive secondary as={FixedHamburgerMenu} {...Responsive.onlyMobile}>
-            <Menu.Item>
+            <Menu.Item >
                 <Icon size="large" inverted name={props.sideBarIsOpen ? "close" : "bars"} onClick={() => props.setVisible(true)} />
             </Menu.Item>
         </Responsive>
@@ -34,9 +32,9 @@ function NavBar(props) {
             </Menu.Item>
         </Responsive >
         <Responsive inverted secondary as={FixedMenu}  {...Responsive.onlyComputer}>
-            <Menu.Item as={Link} to='/' icon='home' name='home' />
-            <Menu.Item as={Link} to="/contact" icon="mail" name='Contact' />
-            <Menu.Item as={Link} to="/links" icon="chain" name='Links & Resources' />
+            <Menu.Item as={Link} active={props.location.pathname === '/'} to='/' icon='home' name='home' />
+            <Menu.Item as={Link} active={props.location.pathname === '/contact'} to="/contact" icon="mail" name='Contact' />
+            <Menu.Item as={Link} active={props.location.pathname === '/links'} to="/links" icon="chain" name='Links & Resources' />
         </Responsive>
     </>
 }

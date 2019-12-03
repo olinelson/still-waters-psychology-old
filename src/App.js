@@ -2,14 +2,13 @@ import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
 import { HashRouter as Router, Route, Link, NavLink } from 'react-router-dom'
 import { CSSTransition } from 'react-transition-group'
-
-// import { Container, Navbar, Nav } from 'react-bootstrap'
 import Home from './pages/Home'
 import Links from './pages/Links'
 import Contact from './pages/Contact'
 
 import NavBar from './components/NavBar'
-import { Container, Sidebar, Menu } from 'semantic-ui-react'
+import SideBarMenuItems from './components/SideBarMenuItems'
+import { Sidebar, Menu } from 'semantic-ui-react'
 
 const routes = [
   { path: '/', name: 'Home', Component: Home },
@@ -33,14 +32,17 @@ export default function App() {
             vertical
             visible={visible}
             width='thin'
+            pointing
           >
-            <Menu.Item as={Link} to='/' icon='home' name='home' />
+            <SideBarMenuItems />
+            {/* <Menu.Item as={Link} to='/' icon='home' name='home' />
             <Menu.Item as={Link} to="/contact" icon="mail" name='Contact' />
-            <Menu.Item as={Link} to="/links" icon="chain" name='Links & Resources' />
+            <Menu.Item as={Link} to="/links" icon="chain" name='Links & Resources' /> */}
           </Sidebar>
 
           <Sidebar.Pusher>
             <NavBar sideBarIsOpen={visible} setVisible={(e) => setVisible(e)} />
+
             {routes.map(({ path, Component }) => (
               <Route key={path} exact path={path}>
                 {({ match }) => (
@@ -55,6 +57,7 @@ export default function App() {
                     </div>
                   </CSSTransition>
                 )}
+
               </Route>
             ))}
           </Sidebar.Pusher>

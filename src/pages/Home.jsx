@@ -1,10 +1,9 @@
-import React, { useEffect } from 'react'
-import { Header, Label, Item, Container, Divider, Transition } from 'semantic-ui-react'
+import React from 'react'
+import { Header, Label, Item, Container, Divider } from 'semantic-ui-react'
 import { JumboHeader, JumboMessage, Jumbotron } from '../components/StyledComponents'
-import { withRouter } from 'react-router-dom'
 
 
-function Home(props) {
+function Home() {
 
     return <>
         <Jumbotron fullHeight src="https://images.pexels.com/photos/1533720/pexels-photo-1533720.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" >
@@ -47,4 +46,4 @@ function Home(props) {
 
 }
 
-export default withRouter(Home)
+export default Home
