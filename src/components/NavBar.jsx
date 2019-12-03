@@ -23,12 +23,12 @@ function NavBar(props) {
 
         <Responsive secondary as={FixedHamburgerMenu} {...Responsive.onlyMobile}>
             <Menu.Item >
-                <Icon size="large" inverted name={props.sideBarIsOpen ? "close" : "bars"} onClick={() => props.setVisible(true)} />
+                <Icon size="big" inverted name={props.sideBarIsOpen ? "close" : "bars"} onClick={() => props.setVisible(true)} />
             </Menu.Item>
         </Responsive>
         < Responsive secondary as={FixedHamburgerMenu} {...Responsive.onlyTablet}>
             <Menu.Item>
-                <Icon size="large" inverted name={props.sideBarIsOpen ? "close" : "bars"} onClick={() => props.setVisible(true)} />
+                <Icon size="big" inverted name={props.sideBarIsOpen ? "close" : "bars"} onClick={() => props.setVisible(true)} />
             </Menu.Item>
         </Responsive >
         <Responsive inverted secondary as={FixedMenu}  {...Responsive.onlyComputer}>
