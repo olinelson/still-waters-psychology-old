@@ -31,3 +31,7 @@
 .ui.secondary.pointing.menu {
   border: none;
 }
+
+input {
+  font-size: 16px;
+}
