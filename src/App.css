@@ -1,5 +1,4 @@
-
-
+/* on route change transition */
 .page {
   height: 100vh;
   overflow-x: scroll;
@@ -25,4 +24,10 @@
   opacity: 0;
   transform: scale(0.9);
   transition: opacity 300ms, transform 300ms;
+}
+/* end on route change transition */
+
+/* to remove borders on full res nav bar */
+.ui.secondary.pointing.menu {
+  border: none;
 }
