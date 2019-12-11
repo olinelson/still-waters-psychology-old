@@ -7,7 +7,7 @@ export default function Footer() {
     <FooterContainer>
       <p>
         <Icon name='copyright' />
-        Marie-Therese Proctor {new Date().getFullYear()}
+        Still Waters Psychology {new Date().getFullYear()}
       </p>
       <small>
         designed and developed by{"  "}
