@@ -59,7 +59,7 @@ export default function App() {
                   >
                     <div className='page'>
                       <Component />
-                      <Footer />
+                      <Footer routes={routes} />
                     </div>
                   </CSSTransition>
                 )}

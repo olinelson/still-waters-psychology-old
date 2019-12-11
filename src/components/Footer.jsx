@@ -1,20 +1,44 @@
 import React from "react";
-import { Icon } from "semantic-ui-react";
-import { FooterContainer } from "./StyledComponents";
+import { withRouter, Link } from "react-router-dom";
+import {
+  Icon,
+  Container,
+  Segment,
+  List,
+  Divider,
+  Image,
+  Menu
+} from "semantic-ui-react";
 
-export default function Footer() {
+function Footer(props) {
   return (
-    <FooterContainer>
-      <p>
-        <Icon name='copyright' />
-        Still Waters Psychology {new Date().getFullYear()}
-      </p>
-      <small>
-        designed and developed by{"  "}
-        <a target='blank' href='http://olinelson.com'>
-          Oli Nelson
-        </a>
-      </small>
-    </FooterContainer>
+    <Segment
+      inverted={false}
+      vertical
+      style={{ margin: "5em 0em 0em", padding: "5em 0em" }}
+    >
+      <Divider inverted={false} section />
+      <Container textAlign='center'>
+        <Image centered size='tiny' src='logos/logo.png' />
+
+        <List horizontal inverted={false} divided link size='small'>
+          {props.routes.map(r => (
+            <Menu.Item
+              active={props.location.pathname === r.path}
+              as={Link}
+              to={r.path}
+              name={r.name}
+            />
+          ))}
+        </List>
+        <Divider hidden />
+        <small>
+          <Icon name='copyright' />
+          {new Date().getFullYear()}
+        </small>
+      </Container>
+    </Segment>
   );
 }
+
+export default withRouter(Footer);

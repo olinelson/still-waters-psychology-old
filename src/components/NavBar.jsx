@@ -11,7 +11,7 @@ function NavBar(props) {
     background: rgb(255, 255, 255);
     background: linear-gradient(
       180deg,
-      rgba(0, 0, 0, 0.3) 20%,
+      rgba(0, 0, 0, 0.3) 40%,
       rgba(255, 255, 255, 0) 100%
     ) !important;
   `;

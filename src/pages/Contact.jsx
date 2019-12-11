@@ -1,7 +1,13 @@
 import React from "react";
-import { Embed, Container, Form, Button, Divider } from "semantic-ui-react";
+import {
+  Embed,
+  Image,
+  Container,
+  Form,
+  Button,
+  Divider
+} from "semantic-ui-react";
 import { Jumbotron } from "../components/StyledComponents";
-
 export default function Contact() {
   return (
     <>
