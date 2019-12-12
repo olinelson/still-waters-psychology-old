@@ -1,14 +1,77 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
+import ContactForm from "../components/ContactForm";
 import {
   Embed,
   Image,
   Container,
   Form,
   Button,
-  Divider
+  Divider,
+  Header,
+  Accordion
 } from "semantic-ui-react";
 import { Jumbotron } from "../components/StyledComponents";
 export default function Contact() {
+  const panels = [
+    {
+      key: "0",
+      title: "Wheelchair Accessibility",
+      content:
+        "There is wheelchair access at the front entry to the practice and wheelchair accessible toilet facilities."
+    },
+    {
+      key: "1",
+      title: "Late Arrival Policy",
+      content:
+        "Where clients arrive late for a session, the session will still end at the scheduled time, meaning that session will be shorter on that occasion. Time has been reserved for you and only you at the agreed upon time, with other people are scheduled after your time."
+    },
+    {
+      key: "3",
+      title: "No Show Policy",
+      content:
+        "Where clients fail to attend an appointment and there is no communication regarding their absence the normal session fee will be applied."
+    },
+    {
+      key: "5",
+      title: "Cancellation policy",
+      content: {
+        content: (
+          <>
+            <p>
+              We respect that your time is valuable, and we appreciate that you
+              understand ours is too. Regretfully cancellation fees are
+              necessary as it unlikely that your spot can be given to another
+              client at such short note.
+            </p>
+            <ul>
+              <li>
+                A 60% cancellation fee will be applied when clients cancel
+                within 24 hours of their appointment.
+              </li>
+              <li>
+                A 40% cancellation fee will be applied when clients cancel
+                within 48 hours of their appointment.
+              </li>
+            </ul>
+
+            <p>
+              When cancelling a session please advise as to the reason for the
+              cancellation. Please note Medicare do not reimburse cancelled
+              session and the NDIS cover a limited number of cancellation fees.
+            </p>
+            <p>
+              Where a therapist needs to cancel for unexpected reasons you will
+              be offered a replacement appointment at a mutually convenient time
+              at the normal session fee.
+            </p>
+          </>
+        )
+      }
+    }
+  ];
+
   return (
     <>
       <Jumbotron
@@ -78,7 +141,9 @@ export default function Contact() {
           reception area.
         </p>
 
-        <Form action='https://formspree.io/olinelson93@gmail.com' method='POST'>
+        <ContactForm />
+
+        {/* <Form action='https://formspree.io/olinelson93@gmail.com' method='POST'>
           <h1>Contact</h1>
           <Form.Input
             required
@@ -101,58 +166,12 @@ export default function Contact() {
             placeholder='It Was the Best of Times; It Was the Worst of Times...'
           />
           <Button type='submit'>Send</Button>
-        </Form>
+        </Form> */}
 
-        <h4>Wheelchair Accessibility</h4>
-        <p>
-          There is wheelchair access at the front entry to the practice and
-          wheelchair accessible toilet facilities.{" "}
-        </p>
+        <Divider hidden />
 
-        <h4>Late Arrival Policy</h4>
-        <p>
-          Where clients arrive late for a session, the session will still end at
-          the scheduled time, meaning that session will be shorter on that
-          occasion. Time has been reserved for you and only you at the agreed
-          upon time, with other people are scheduled after your time.
-        </p>
-
-        <h4>No Show Policy</h4>
-        <p>
-          Where clients fail to attend an appointment and there is no
-          communication regarding their absence the normal session fee will be
-          applied.
-        </p>
-
-        <h4>Cancellation policy</h4>
-        <p>
-          We respect that your time is valuable, and we appreciate that you
-          understand ours is too. Regretfully cancellation fees are necessary as
-          it unlikely that your spot can be given to another client at such
-          short note.
-        </p>
-        <ul>
-          <li>
-            A 60% cancellation fee will be applied when clients cancel within 24
-            hours of their appointment.
-          </li>
-          <li>
-            A 40% cancellation fee will be applied when clients cancel within 48
-            hours of their appointment.{" "}
-          </li>
-        </ul>
-
-        <p>
-          When cancelling a session please advise as to the reason for the
-          cancellation. Please note Medicare do not reimburse cancelled session
-          and the NDIS cover a limited number of cancellation fees.{" "}
-        </p>
-
-        <p>
-          Where a therapist needs to cancel for unexpected reasons you will be
-          offered a replacement appointment at a mutually convenient time at the
-          normal session fee.
-        </p>
+        <Header as='h1' content='Additional Information' />
+        <Accordion defaultActiveIndex={0} fluid styled panels={panels} />
       </Container>
     </>
   );

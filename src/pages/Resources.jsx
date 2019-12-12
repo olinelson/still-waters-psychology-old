@@ -1,6 +1,19 @@
 import React from "react";
-import { Container, Card, Divider, Image } from "semantic-ui-react";
-import { Jumbotron } from "../components/StyledComponents";
+import {
+  Container,
+  Card,
+  Divider,
+  Image,
+  List,
+  Icon,
+  Segment
+} from "semantic-ui-react";
+import {
+  Jumbotron,
+  JumboMessage,
+  JumboHeader,
+  CreditContainer
+} from "../components/StyledComponents";
 
 export default function Resources() {
   return (
@@ -19,30 +32,110 @@ export default function Resources() {
           If you are experiencing an immediate mental health crisis and feel at
           risk in relation to your personal safety, it is recommended that you:
         </p>
-        <ol>
-          <li>Contact your GP.</li>
-          <li>Advise a family member or friend.</li>
-          <li>
-            Contact the community mental health at your local hospital and ask
-            to speak with the intake officer OR present yourself at Emergency at
-            your local hospital
-          </li>
-        </ol>
+      </Container>
 
+      <Divider hidden />
+
+      <Container>
+        <Segment>
+          <List divided relaxed verticalAlign='middle'>
+            <List.Item>
+              <List.Icon size='huge' name='doctor' />
+              <List.Content>
+                <List.Header> Contact your GP.</List.Header>
+              </List.Content>
+            </List.Item>
+
+            <List.Item>
+              <List.Icon size='huge' name='user' />
+              <List.Content>
+                <List.Header>Advise a family member or friend.</List.Header>
+              </List.Content>
+            </List.Item>
+
+            <List.Item>
+              <List.Icon size='huge' name='medkit' />
+              <List.Content>
+                <List.Header>Contact the community mental health</List.Header>
+                <List.Description>
+                  at your local hospital and ask to speak with the intake
+                  officer OR present yourself at Emergency at your local
+                  hospital
+                </List.Description>
+              </List.Content>
+            </List.Item>
+          </List>
+        </Segment>
+      </Container>
+
+      <Divider hidden />
+
+      <Container text>
         <p>
           You can also contact the following numbers to seek help or to speak
           with someone about your situation:
         </p>
+      </Container>
 
-        <ul>
-          <li>Emergency 000</li>
-          <li>Lifeline 13 11 14</li>
-          <li>Kids Helpline 1800 55 1800</li>
-          <li>MensLine 1300 78 99 78</li>
-          <li>Suicide Call Back Service 1300 659 467</li>
-        </ul>
+      <Divider hidden />
 
-        <Image src='images/Image_19_Hands.jpg' />
+      <Container>
+        <Segment>
+          <List divided relaxed verticalAlign='middle'>
+            <List.Item>
+              <List.Icon size='big' name='phone' />
+              <List.Content>
+                <List.Header>Emergency 000</List.Header>
+              </List.Content>
+            </List.Item>
+
+            <List.Item>
+              <List.Icon size='big' name='phone' />
+              <List.Content>
+                <List.Header>Lifeline 13 11 14</List.Header>
+              </List.Content>
+            </List.Item>
+            <List.Item>
+              <List.Icon size='big' name='phone' />
+              <List.Content>
+                <List.Header>Kids Helpline 1800 55 1800</List.Header>
+              </List.Content>
+            </List.Item>
+            <List.Item>
+              <List.Icon size='big' name='phone' />
+              <List.Content>
+                <List.Header>Lifeline 13 11 14</List.Header>
+              </List.Content>
+            </List.Item>
+            <List.Item>
+              <List.Icon size='big' name='phone' />
+              <List.Content>
+                <List.Header>MensLine 1300 78 99 78</List.Header>
+              </List.Content>
+            </List.Item>
+            <List.Item>
+              <List.Icon size='big' name='phone' />
+              <List.Content>
+                <List.Header>
+                  Suicide Call Back Service 1300 659 467
+                </List.Header>
+              </List.Content>
+            </List.Item>
+          </List>
+        </Segment>
+      </Container>
+
+      <Divider hidden />
+
+      <Jumbotron
+        // fullHeight
+        alt='Still Waters, Credit: Catharine McCann
+Maine 1 Photography'
+        src='images/Image_9_Therapy_1.jpg'
+      />
+
+      <Container text>
+        {/* <Image src='images/Image_19_Hands.jpg' /> */}
 
         <h1>Support Organizations</h1>
 
