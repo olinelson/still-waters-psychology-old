@@ -49,6 +49,17 @@ export default function Contact() {
           // url='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d848307.3784013895!2d150.37010698248696!3d-33.84582855426672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129838f39a743f%3A0x3017d681632a850!2sSydney%20NSW!5e0!3m2!1sen!2sau!4v1575331083966!5m2!1sen!2sau'
         />
 
+        <Divider hidden />
+
+        <Container textAlign='center'>
+          <Button
+            target='_blank'
+            href='https://www.google.com/maps?ll=-34.040798,150.748218&z=16&t=m&hl=en&gl=AU&mapclient=embed&daddr=Shop+4/38+Exchange+Parade+Smeaton+Grange+NSW+2567@-34.0407982,150.748218'
+          >
+            Get Directions
+          </Button>
+        </Container>
+
         {/* <iframe
           src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.119962861653!2d150.74602931573722!3d-34.0407937354384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12f1c12e78fbe5%3A0x9f87da28f965f7d4!2sShop%204%2F38%20Exchange%20Parade%2C%20Smeaton%20Grange%20NSW%202567!5e0!3m2!1sen!2sau!4v1576062669966!5m2!1sen!2sau'
           width='600'
