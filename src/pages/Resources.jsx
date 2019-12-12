@@ -36,7 +36,7 @@ export default function Resources() {
 
       <Divider hidden />
 
-      <Container>
+      <Container text>
         <Segment>
           <List divided relaxed verticalAlign='middle'>
             <List.Item>
@@ -79,7 +79,7 @@ export default function Resources() {
 
       <Divider hidden />
 
-      <Container>
+      <Container text>
         <Segment>
           <List divided relaxed verticalAlign='middle'>
             <List.Item>
@@ -133,6 +133,8 @@ export default function Resources() {
 Maine 1 Photography'
         src='images/Image_9_Therapy_1.jpg'
       />
+
+      <Divider hidden />
 
       <Container text>
         {/* <Image src='images/Image_19_Hands.jpg' /> */}

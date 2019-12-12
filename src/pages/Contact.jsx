@@ -141,34 +141,11 @@ export default function Contact() {
           reception area.
         </p>
 
+        <Divider />
+
         <ContactForm />
 
-        {/* <Form action='https://formspree.io/olinelson93@gmail.com' method='POST'>
-          <h1>Contact</h1>
-          <Form.Input
-            required
-            label='Full Name'
-            name='name'
-            placeholder='Mike Nock'
-          />
-          <Form.Input
-            required
-            label='Email'
-            name='email'
-            type='email'
-            placeholder='pocket_science@gmail.com'
-          />
-
-          <Form.TextArea
-            required
-            name='message'
-            label='Message'
-            placeholder='It Was the Best of Times; It Was the Worst of Times...'
-          />
-          <Button type='submit'>Send</Button>
-        </Form> */}
-
-        <Divider hidden />
+        <Divider />
 
         <Header as='h1' content='Additional Information' />
         <Accordion defaultActiveIndex={0} fluid styled panels={panels} />
