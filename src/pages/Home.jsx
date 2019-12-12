@@ -259,7 +259,7 @@ Maine 1 Photography'
         fullHeight
         alt='Still Waters, Credit: Catharine McCann
 Maine 1 Photography'
-        src='images/Image_4_Blue_sunset.jpg'
+        src='images/Image_4_Blue_Sunset.jpg'
       >
         <JumboMessage style={{ width: "90vw" }}>
           <Segment basic>
