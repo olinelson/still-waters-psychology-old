@@ -1,57 +1,54 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { Jumbotron, ImageDiv } from "../components/StyledComponents";
-import { Container, Item, Header, Divider, Image } from "semantic-ui-react";
+import React, { useState } from "react";
+import { Jumbotron } from "../components/StyledComponents";
+import {
+  Container,
+  Image,
+  Grid,
+  Segment,
+  Menu,
+  Divider,
+  Header,
+  List
+} from "semantic-ui-react";
+
 export default function Staff() {
-  return (
-    <>
-      <Jumbotron
-        alt='Still Waters, Credit: Catharine McCann
-Maine 1 Photography'
-        src='images/Image_11_Water_drops_1.jpg'
-      ></Jumbotron>
+  const [activeItem, setActiveItem] = useState("biography");
 
-      <Divider hidden />
+  const tabRouter = () => {
+    switch (activeItem) {
+      case "biography":
+        return biography();
 
-      <Container text>
-        <Item.Group>
-          <Item>
-            <Item.Image
-              alt='headshot'
-              size='medium'
-              src={`${process.env.BASE_URL}/headshot.jpg`}
-            />
-            {/* <Item.Image alt="Susan Stephenson, Director" size='medium' src='https://storage.googleapis.com/inner_wisdom_bucket/headshot_noExifRotated.jpg' /> */}
+      case "qualifications":
+        return qualifications();
 
-            <Item.Content verticalAlign='top'>
-              <Header>
-                Biography
-                {/* <Header.Subheader>
-                  {" "}
-                  B.A (Psych), Dip. Ed. (Psych), MEd (Counselling), FAPS,
-                  MCCOUNP, AAOS
-                </Header.Subheader> */}
-              </Header>
+      case "memberships":
+        return memberships();
+    }
+  };
 
-              <Item.Description>
-                <p>
-                  My name is Dr Marie-Thérèse Proctor. For more than 25 years,
-                  whether as a clinician, researcher, educator and academic, I
-                  have been passionate about enabling and equipping individuals
-                  to learn, heal, grow and transform, personally and
-                  professionally. I am a registered psychologist (Medicare
-                  provider) and Master trained psychotherapist providing
-                  short-term and long-term psychological and psychotherapeutic
-                  care to adults of varied ages. In addition, I provide clinical
-                  supervision to counsellors, psychotherapists, psychologists
-                  and chaplains, with an emphasis on reflective practice,
-                  professional formation, growth and maturation.
-                </p>
-              </Item.Description>
-            </Item.Content>
-          </Item>
-        </Item.Group>
-
+  const biography = () => {
+    return (
+      <>
+        <h1>Biography</h1>
+        <Image
+          fluid
+          size='medium'
+          floated='right'
+          src='https://i.pinimg.com/originals/36/51/9e/36519e622b138523a34b9beb29f666b9.jpg'
+        />
+        <p>
+          My name is Dr Marie-Thérèse Proctor. For more than 25 years, whether
+          as a clinician, researcher, educator and academic, I have been
+          passionate about enabling and equipping individuals to learn, heal,
+          grow and transform, personally and professionally. I am a registered
+          psychologist (Medicare provider) and Master trained psychotherapist
+          providing short-term and long-term psychological and psychotherapeutic
+          care to adults of varied ages. In addition, I provide clinical
+          qualifications to counsellors, psychotherapists, psychologists and
+          chaplains, with an emphasis on reflective practice, professional
+          formation, growth and maturation.
+        </p>
         <p>
           Using a relationally orientated, collaborative approach, I seek to
           co-create a safe therapeutic space wherein each client can explore his
@@ -64,9 +61,6 @@ Maine 1 Photography'
           sustain a healthy and stable sense of self and positive relationships
           with others.{" "}
         </p>
-
-        <Image src='images/Image_12_Water_drop_2.jpg' />
-
         <p>
           Engaging in research continues to be an important aspect of my
           professional life. Currently I am a Senior Research Fellow with the
@@ -75,7 +69,6 @@ Maine 1 Photography'
           University (2011-2012); Central Queensland University (2009-2010);
           University of Western Sydney (2008)).{" "}
         </p>
-
         <p>
           Across the years I have resided on numerous professional and academic
           committees (e.g., Christian Counsellors Association Australia (CCAA)
@@ -85,7 +78,6 @@ Maine 1 Photography'
           Australian (PACFA) Education Accreditation Committee (EPAC), sitting
           on various of their course accreditation panels.{" "}
         </p>
-
         <p>
           As a researcher I continue to participate in research collaborations
           with a range of academic and clinical institutions (e.g., Children’s
@@ -95,9 +87,8 @@ Maine 1 Photography'
           sense-making in the context of trauma and loss; and health
           practitioner professional formation. My research has been published in
           peer-reviewed journals and book chapters, the details of which are
-          located on the <Link to='/resources'>Resource page</Link>.
+          located on the Resource page (insert link){" "}
         </p>
-
         <p>
           I am also an academic educator and, until recently, was Head of the
           Graduate School of Counselling at Excelsia College (2011-2019) where I
@@ -109,12 +100,17 @@ Maine 1 Photography'
           educators. Designing a post-graduate counselling program (consisting
           of 3 degrees) is a unique privilege, enabling me to make a
           professional contribution to the counselling sector and the
-          development of next generation of Christian counsellors.
+          development of next generation of Christian counsellors.{" "}
         </p>
+      </>
+    );
+  };
 
-        <Image src='images/Image_13_Water_drop_3.jpg' />
-
-        <h4>Qualifications</h4>
+  const qualifications = () => {
+    return (
+      // <Container text>
+      <>
+        <h1>Qualifications</h1>
         <p>
           My clinical work is informed by ongoing professional training and my
           original academic training. Each year the Psychology Board of
@@ -142,7 +138,6 @@ Maine 1 Photography'
             A Doctorate in the discipline of Psychology from the University of
             Western Sydney - PhD
           </li>
-          <li></li>
         </ul>
 
         <p>
@@ -169,11 +164,17 @@ Maine 1 Photography'
             The relationship between attachment to God, child and adult
             attachment experiences, God concept and the quality and nature of
             relationship with God. Psychology Honours Thesis: School of
-            Psychology, University of Western Sydney, Australia.{" "}
+            Psychology, University of Western Sydney, Australia.
           </li>
         </ul>
+      </>
+    );
+  };
 
-        <h4>Professional Memberships & Registrations</h4>
+  const memberships = () => {
+    return (
+      <>
+        <h1>Professional Memberships & Registrations</h1>
         <p>
           I hold a range of professional association memberships and provider
           rights:
@@ -193,11 +194,56 @@ Maine 1 Photography'
           </li>
           <li>
             I am an associate member of the Christian Counselling Association
-            (CCAA).
+            (CCAA).{" "}
           </li>
         </ul>
+      </>
+    );
+  };
 
-        <Image src='images/Image_15_Water_drop_5.jpg' />
+  return (
+    <>
+      <Jumbotron
+        alt='Still Waters, Credit: Catharine McCann
+Maine 1 Photography'
+        src='images/Image_6_Sunset_with_rocks.jpg'
+      ></Jumbotron>
+      <Divider hidden />
+
+      <Container style={{ minHeight: "50vh" }}>
+        <Grid stackable>
+          <Grid.Column width={4}>
+            <Menu fluid vertical tabular>
+              <Menu.Item
+                name='biography'
+                active={activeItem === "biography"}
+                onClick={() => setActiveItem("biography")}
+              >
+                <Header as='h4'>Biography</Header>
+              </Menu.Item>
+
+              <Menu.Item
+                name='qualifications'
+                active={activeItem === "qualifications"}
+                onClick={() => setActiveItem("qualifications")}
+              >
+                <Header as='h4'>Clinical qualifications </Header>
+              </Menu.Item>
+
+              <Menu.Item
+                name='memberships'
+                active={activeItem === "memberships"}
+                onClick={() => setActiveItem("memberships")}
+              >
+                <Header as='h4'>
+                  Professional Memberships & Registrations
+                </Header>
+              </Menu.Item>
+            </Menu>
+          </Grid.Column>
+
+          <Grid.Column width={12}>{tabRouter()}</Grid.Column>
+        </Grid>
       </Container>
     </>
   );

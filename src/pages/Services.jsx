@@ -1,36 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import { Jumbotron } from "../components/StyledComponents";
-import { Container, Image } from "semantic-ui-react";
+import {
+  Container,
+  Image,
+  Grid,
+  Segment,
+  Menu,
+  Divider,
+  Header,
+  List
+} from "semantic-ui-react";
 
 export default function Services() {
-  return (
-    <>
-      <Jumbotron
-        alt='Still Waters, Credit: Catharine McCann
-Maine 1 Photography'
-        src='images/Image_6_Sunset_with_rocks.jpg'
-      ></Jumbotron>
+  const [activeItem, setActiveItem] = useState("counselling");
 
-      <Container text>
-        <p>At Still Waters Psychology we offer the following services:</p>
-        <ul>
-          <li>
-            Counselling and Psychotherapy for adults of all ages and life
-            stages.
-          </li>
-          <li>
-            Clinical Supervision for psychologists, psychotherapists,
-            counsellors and chaplains/ministers.
-          </li>
-          <li>
-            Professional Development Workshops and Presentations for allied
-            health professionals and churches staff and leaders.
-          </li>
-        </ul>
+  const tabRouter = () => {
+    switch (activeItem) {
+      case "counselling":
+        return counselling();
 
-        <Image src='images/Image_7_Purple_flower.jpg' />
+      case "supervision":
+        return supervision();
 
-        <h4>Counselling and Psychotherapy</h4>
+      case "workshops":
+        return workshops();
+    }
+  };
+
+  const counselling = () => {
+    return (
+      <>
+        <h1>Counselling and Psychotherapy</h1>
         <p>
           Counselling and Psychotherapy are offered for a range of adult life
           issues (see below). Therapy is tailored to each client, with the
@@ -68,8 +68,6 @@ Maine 1 Photography'
           partnership, where the therapist works for the benefit of each client.{" "}
         </p>
 
-        <Image src='images/Image_8_Purple_flower.jpg' />
-
         <h4>Therapeutic approaches</h4>
         <p>
           Psychologists and psychotherapists are trained in a range of therapy
@@ -86,8 +84,6 @@ Maine 1 Photography'
           Behavioural Therapies, Psychodynamic Psychotherapy and Sensorimotor
           Therapies.
         </p>
-
-        <Image src='images/Image_10_Therapy_2.jpg' />
 
         <h4>Types of Clients</h4>
         <p>
@@ -124,10 +120,14 @@ Maine 1 Photography'
           making initial contact, we can talk about the details of your funding
           support.
         </p>
+      </>
+    );
+  };
 
-        <Image src='images/Image_9_Therapy_1.jpg' />
-
-        <h4>Clinical Supervision</h4>
+  const supervision = () => {
+    return (
+      <>
+        <h1>Clinical Supervision</h1>
         <p>
           Engaging in continued reflection about one’s clinical work is a
           requirement for all healthcare professionals and those working withing
@@ -139,18 +139,86 @@ Maine 1 Photography'
           Supervisees are recommended to check with their professional
           association regarding the required qualifications and experiences for
           supervisors as associations set their own criteria regarding
-          supervision.
+          supervision.{" "}
         </p>
+      </>
+    );
+  };
 
-        <h4>Professional Development Workshops and Presentations</h4>
+  const workshops = () => {
+    return (
+      <>
+        <h1>Professional Development Workshops and Presentations</h1>
         <p>
           From time to time Still Waters Psychology will host professional
           development workshops on a range of topics related to the practice of
-          psychology and mental health management in church settings. Tailored
-          workshops can also be developed upon request. Please contact the
-          practice to discuss your organization’s professional development
+          psychology and mental health management in church settings.
+        </p>
+        <p>
+          Tailored workshops can also be developed upon request. Please contact
+          the practice to discuss your organization’s professional development
           needs.
         </p>
+      </>
+    );
+  };
+
+  return (
+    <>
+      <Jumbotron
+        alt='Still Waters, Credit: Catharine McCann
+Maine 1 Photography'
+        src='images/Image_6_Sunset_with_rocks.jpg'
+      ></Jumbotron>
+      <Divider hidden />
+
+      <Container style={{ minHeight: "50vh" }}>
+        <Grid stackable>
+          <Grid.Column width={4}>
+            <Menu fluid vertical tabular>
+              <Menu.Item
+                name='counselling'
+                active={activeItem === "counselling"}
+                onClick={() => setActiveItem("counselling")}
+              >
+                <Header as='h4'>Counselling and Psychotherapy</Header>
+                <List>
+                  <List.Item content='Adults of all ages and life stages.' />
+                </List>
+              </Menu.Item>
+
+              <Menu.Item
+                name='supervision'
+                active={activeItem === "supervision"}
+                onClick={() => setActiveItem("supervision")}
+              >
+                <Header as='h4'>Clinical Supervision </Header>
+                <List>
+                  <List.Item content='Psychologists' />
+                  <List.Item content='Psychotherapists' />
+                  <List.Item content='Counsellors' />
+                  <List.Item content='Chaplains/Ministers' />
+                </List>
+              </Menu.Item>
+
+              <Menu.Item
+                name='workshops'
+                active={activeItem === "workshops"}
+                onClick={() => setActiveItem("workshops")}
+              >
+                <Header as='h4'>
+                  Professional Development Workshops & Presentations
+                </Header>
+                <List>
+                  <List.Item content='Allied health professionals' />
+                  <List.Item content='Churches staff and leaders' />
+                </List>
+              </Menu.Item>
+            </Menu>
+          </Grid.Column>
+
+          <Grid.Column width={12}>{tabRouter()}</Grid.Column>
+        </Grid>
       </Container>
     </>
   );
