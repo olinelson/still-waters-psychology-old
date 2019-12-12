@@ -49,3 +49,7 @@ blockquote {
 p {
   text-align: justify;
 }
+
+* {
+  overflow-x: hidden !important;
+}
