@@ -1,12 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import ContactForm from "../components/ContactForm";
 import {
   Embed,
-  Image,
   Container,
-  Form,
   Button,
   Divider,
   Header,
