@@ -38,10 +38,7 @@ Maine 1 Photography'
           <JumboHeader size='huge' as={"h1"} inverted>
             Still Waters Psychology
           </JumboHeader>
-          <Header.Subheader
-            style={{ color: "white", textShadow: "1px 1px 2px black" }}
-            as='h3'
-          >
+          <Header.Subheader style={{ color: "white" }} as='h3'>
             Compassion, Hope, Wisdom
           </Header.Subheader>
         </JumboMessage>
@@ -159,17 +156,35 @@ Maine 1 Photography'
       >
         <JumboMessage style={{ width: "90vw" }}>
           <Segment basic>
-            <Grid columns={2}>
+            <Grid columns={2} stackable>
               <Grid.Row>
                 <CenteredGridColumn>
                   <List verticalAlign='middle'>
-                    <Header inverted as='h1'>
+                    <Header
+                      style={{
+                        textShadow: " 1px 1px 2px black"
+                      }}
+                      inverted
+                      as='h1'
+                    >
                       Act with Compassion
                     </Header>
-                    <Header inverted as='h1'>
+                    <Header
+                      style={{
+                        textShadow: " 1px 1px 2px black"
+                      }}
+                      inverted
+                      as='h1'
+                    >
                       Live in Hope
                     </Header>
-                    <Header inverted as='h1'>
+                    <Header
+                      style={{
+                        textShadow: " 1px 1px 2px black"
+                      }}
+                      inverted
+                      as='h1'
+                    >
                       Grow in Wisdom
                     </Header>
                   </List>

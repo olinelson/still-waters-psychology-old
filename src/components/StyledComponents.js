@@ -4,7 +4,7 @@ import { Header, Container, Grid } from "semantic-ui-react";
 export const JumboHeader = styled(Header)`
   font-size: 4rem;
   color: white;
-  //   text-shadow: 1px 1px 2px black;
+  // text-shadow: 1px 1px 2px black;
 `;
 
 export const Jumbotron = styled.div`
