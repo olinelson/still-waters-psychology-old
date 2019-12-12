@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import {
   Header,
   Container,
@@ -6,19 +8,22 @@ import {
   Popup,
   Button,
   Icon,
-  Segment,
   Card,
-  Image
+  Image,
+  Item,
+  Grid,
+  Segment,
+  List
 } from "semantic-ui-react";
 import {
   JumboHeader,
   JumboMessage,
   Jumbotron,
   CreditContainer,
-  TwoColumnContainer,
   ImageDiv,
-  Quote
+  CenteredGridColumn
 } from "../components/StyledComponents";
+import Faqs from "../components/Faqs";
 
 function Home() {
   return (
@@ -77,35 +82,57 @@ Maine 1 Photography'
       <Divider hidden />
 
       <Container>
-        <Card.Group centered>
-          <Card>
-            <Card.Content textAlign='center'>
-              <Icon name='sun' size='huge' />
-              <Header>A still mind</Header>
-            </Card.Content>
-          </Card>
-          <Card>
-            <Card.Content textAlign='center'>
-              <Icon name='heart' size='huge' />
-              <Header>A peaceful heart</Header>
-            </Card.Content>
-          </Card>
-          <Card>
-            <Card.Content textAlign='center'>
-              <Icon name='coffee' size='huge' />
-              <Header>A calm spirit</Header>
-            </Card.Content>
-          </Card>
-          <Card>
-            <Card.Content textAlign='center'>
-              <Icon name='smile' size='huge' />
-              <Header>A restored soul</Header>
-            </Card.Content>
-          </Card>
-        </Card.Group>
+        <Grid columns={2} padded relaxed stackable>
+          <Grid.Row>
+            <CenteredGridColumn>
+              <ImageDiv
+                width='20rem'
+                height='20rem'
+                src='images/Image_24_Stack.jpg'
+              />
+
+              <h2>A still mind</h2>
+              <Divider hidden />
+            </CenteredGridColumn>
+
+            <CenteredGridColumn>
+              <ImageDiv
+                width='20rem'
+                height='20rem'
+                src='images/Image_21_Wave.jpg'
+              />
+
+              <h2>A peaceful heart</h2>
+              <Divider hidden />
+            </CenteredGridColumn>
+
+            <CenteredGridColumn>
+              <ImageDiv
+                width='20rem'
+                height='20rem'
+                src='images/Image_22_Woman_on_rock.jpg'
+              />
+
+              <h2>A calm spirit</h2>
+              <Divider hidden />
+            </CenteredGridColumn>
+
+            <CenteredGridColumn>
+              <ImageDiv
+                width='20rem'
+                height='20rem'
+                alt='Man on rock by Marius Venter from Pexels'
+                src='images/Image_23_Man_on_rock.jpg'
+              />
+
+              <h2>A restored soul</h2>
+              <Divider hidden />
+            </CenteredGridColumn>
+          </Grid.Row>
+        </Grid>
       </Container>
 
-      <Divider hidden />
+      {/* <Divider hidden /> */}
 
       <Container text>
         <p>
@@ -124,33 +151,61 @@ Maine 1 Photography'
 
       <Divider hidden />
 
-      <Container textAlign='center'>
-        <Card.Group centered>
-          <Card
+      <Jumbotron
+        fullHeight
+        alt='Still Waters, Credit: Catharine McCann
+Maine 1 Photography'
+        src='images/Image_2_Sunset.jpg'
+      >
+        <JumboMessage style={{ width: "90vw" }}>
+          <Segment basic>
+            <Grid columns={2}>
+              <Grid.Row>
+                <CenteredGridColumn>
+                  <List verticalAlign='middle'>
+                    <Header inverted as='h1'>
+                      Act with Compassion
+                    </Header>
+                    <Header inverted as='h1'>
+                      Live in Hope
+                    </Header>
+                    <Header inverted as='h1'>
+                      Grow in Wisdom
+                    </Header>
+                  </List>
+                </CenteredGridColumn>
+                <CenteredGridColumn textAlign='center'>
+                  <Button inverted basic size='big'>
+                    Book Appointment
+                  </Button>
+                </CenteredGridColumn>
+              </Grid.Row>
+            </Grid>
+          </Segment>
+        </JumboMessage>
+
+        <CreditContainer>
+          {/* <Popup
+            size='mini'
+            basic
+            hoverable
             style={{
-              boxShadow: "none"
+              borderRadius: 0,
+              background: "rgba(0,0,0,0)"
             }}
-          >
-            <Card.Content textAlign='center'>
-              <Header>Act with Compassion</Header>
-              <Header>Live in Hope</Header>
-              <Header>Grow in Wisdom</Header>
-            </Card.Content>
-          </Card>
-          <Card
-            style={{
-              display: "grid",
-              justifyContent: "center",
-              alignContent: "center",
-              boxShadow: "none"
-            }}
-          >
-            <Card.Content textAlign='center'>
-              <Button>Book Appointment</Button>
-            </Card.Content>
-          </Card>
-        </Card.Group>
-      </Container>
+            inverted
+            content={
+              <a
+                style={{ color: "inherit" }}
+                href='https://www.maine1photography.com/'
+              >
+                ‘Still Waters’ – Catharine McCann
+              </a>
+            }
+            trigger={<Icon size='small' name='info' />}
+          /> */}
+        </CreditContainer>
+      </Jumbotron>
 
       <Divider hidden />
 
@@ -187,8 +242,6 @@ Maine 1 Photography'
       </Container>
       <Divider hidden />
 
-      <Image src='images/Image_2_Sunset.jpg' />
-
       <Divider hidden />
 
       <Container text>
@@ -200,8 +253,56 @@ Maine 1 Photography'
         </p>
 
         <Divider hidden />
+      </Container>
 
-        <blockquote cite='https://www.huxley.net/bnw/four.html'>
+      <Jumbotron
+        fullHeight
+        alt='Still Waters, Credit: Catharine McCann
+Maine 1 Photography'
+        src='images/Image_4_Blue_sunset.jpg'
+      >
+        <JumboMessage style={{ width: "90vw" }}>
+          <Segment basic>
+            <blockquote cite='https://www.huxley.net/bnw/four.html'>
+              <Icon name='quote left' />
+              <p>
+                The Lord is my shepherd; I shall not want. He makes me lie down
+                in green pastures. He leads me beside still waters. He restores
+                my soul.
+              </p>
+              <footer>
+                <small>
+                  Psalm 23: 1: 3 , <cite>Holy Bible, ESV®, 2001</cite>
+                </small>
+              </footer>
+            </blockquote>
+          </Segment>
+        </JumboMessage>
+
+        <CreditContainer>
+          {/* <Popup
+            size='mini'
+            basic
+            hoverable
+            style={{
+              borderRadius: 0,
+              background: "rgba(0,0,0,0)"
+            }}
+            inverted
+            content={
+              <a
+                style={{ color: "inherit" }}
+                href='https://www.maine1photography.com/'
+              >
+                ‘Still Waters’ – Catharine McCann
+              </a>
+            }
+            trigger={<Icon size='small' name='info' />}
+          /> */}
+        </CreditContainer>
+      </Jumbotron>
+
+      {/* <blockquote cite='https://www.huxley.net/bnw/four.html'>
           <Icon name='quote left' />
           <p>
             The Lord is my shepherd; I shall not want. He makes me lie down in
@@ -213,12 +314,13 @@ Maine 1 Photography'
               Psalm 23: 1: 3 , <cite>Holy Bible, ESV®, 2001</cite>
             </small>
           </footer>
-        </blockquote>
+        </blockquote> */}
 
-        <Divider hidden />
-      </Container>
+      <Divider hidden />
 
       <Container text>
+        <Faqs />
+        {/* 
         <h1>Location</h1>
         <p>
           We offer in-person sessions at Smeaton Grange (near Narellan NSW) and
@@ -250,13 +352,13 @@ Maine 1 Photography'
         </p>
         <p>
           You can arrange an appointment by phoning 0466 231 620 or by sending
-          an enquiry from the Contact Page (insert link).{" "}
+          an enquiry from the <Link to='/contact'>Contact Page</Link>.
         </p>
         <p>
           We will guide you through setting up an initial appointment and will
           happily answer any questions you might have about the services we
           offer.{" "}
-        </p>
+        </p> */}
       </Container>
     </>
   );

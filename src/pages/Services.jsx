@@ -6,7 +6,6 @@ export default function Services() {
   return (
     <>
       <Jumbotron
-        fullHeight
         alt='Still Waters, Credit: Catharine McCann
 Maine 1 Photography'
         src='images/Image_6_Sunset_with_rocks.jpg'

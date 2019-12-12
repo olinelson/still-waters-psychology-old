@@ -1,11 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Jumbotron, ImageDiv } from "../components/StyledComponents";
 import { Container, Item, Header, Divider, Image } from "semantic-ui-react";
 export default function Staff() {
   return (
     <>
       <Jumbotron
-        fullHeight
         alt='Still Waters, Credit: Catharine McCann
 Maine 1 Photography'
         src='images/Image_11_Water_drops_1.jpg'
@@ -95,7 +95,7 @@ Maine 1 Photography'
           sense-making in the context of trauma and loss; and health
           practitioner professional formation. My research has been published in
           peer-reviewed journals and book chapters, the details of which are
-          located on the Resource page (insert link){" "}
+          located on the <Link to='/resources'>Resource page</Link>.
         </p>
 
         <p>

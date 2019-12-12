@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Header, Container } from "semantic-ui-react";
+import { Header, Container, Grid } from "semantic-ui-react";
 
 export const JumboHeader = styled(Header)`
   font-size: 4rem;
@@ -74,4 +74,13 @@ export const ImageDiv = styled.div`
   background-size: cover;
   grid-area: ${props => `${props.gridArea}`};
   background-position: center;
+`;
+
+export const CenteredGridColumn = styled(Grid.Column)`
+  display: flex !important;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 `;
