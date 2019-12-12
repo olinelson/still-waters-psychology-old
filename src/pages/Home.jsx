@@ -30,9 +30,12 @@ function Home() {
     <>
       <Jumbotron
         fullHeight
-        alt='Still Waters, Credit: Catharine McCann
-Maine 1 Photography'
-        src='images/Image_1_Still_Waters_High_Resolution.jpg'
+        alt='Still Waters, Credit: Catharine McCann Maine 1 Photography'
+        // src='images/Image_1_Still_Waters_High_Resolution.jpg'
+        imgDir='/images/image_1/'
+        fileName='image_1'
+        imgFormat='jpg'
+        fileCount={18}
       >
         <JumboMessage>
           <JumboHeader size='huge' as={"h1"} inverted>
@@ -42,7 +45,6 @@ Maine 1 Photography'
             Compassion, Hope, Wisdom
           </Header.Subheader>
         </JumboMessage>
-
         <CreditContainer>
           <Popup
             size='mini'

@@ -19,8 +19,11 @@ export default function Resources() {
   return (
     <>
       <Jumbotron
+        imgDir='/images/image_18/'
+        fileName='image_18'
+        imgFormat='jpg'
+        fileCount={8}
         style={{
-          backgroundImage: `url('images/Image_18_Blue_water.jpg') `,
           backgroundPosition: "center"
         }}
       />

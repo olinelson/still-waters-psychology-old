@@ -206,7 +206,10 @@ export default function Staff() {
       <Jumbotron
         alt='Still Waters, Credit: Catharine McCann
 Maine 1 Photography'
-        src='images/Image_6_Sunset_with_rocks.jpg'
+        imgDir='/images/image_11/'
+        fileName='image_11'
+        imgFormat='jpg'
+        fileCount={13}
       ></Jumbotron>
       <Divider hidden />
 

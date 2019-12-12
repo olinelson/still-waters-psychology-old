@@ -75,8 +75,11 @@ export default function Contact() {
   return (
     <>
       <Jumbotron
+        imgDir='/images/image_16/'
+        fileName='image_16'
+        imgFormat='jpg'
+        fileCount={19}
         style={{
-          backgroundImage: `url('images/Image_16_Path.jpg') `,
           backgroundPosition: "center"
         }}
       />
