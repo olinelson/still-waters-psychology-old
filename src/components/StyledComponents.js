@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Header, Container, Grid } from "semantic-ui-react";
+import { BASE_URL } from "../config";
 
 export const JumboHeader = styled(Header)`
   font-size: 4rem;
@@ -12,7 +13,7 @@ export const Jumbotron = styled.div`
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-image: ${props =>
-      `url('${props.imgDir}${props.fileName}_1.${props.imgFormat}')`};
+      `url('${BASE_URL}${props.imgDir}${props.fileName}_1.${props.imgFormat}')`};
      height: ${props => (props.fullHeight ? "90vh !important" : "40vh")};
     image-orientation: from-image;
     display: grid;
@@ -21,103 +22,103 @@ export const Jumbotron = styled.div`
         
         background-image: ${props =>
           props.fileCount >= 2
-            ? `url('${props.imgDir}${props.fileName}_2.${props.imgFormat}')`
+            ? `url('${BASE_URL}${props.imgDir}${props.fileName}_2.${props.imgFormat}')`
             : null}
     }
     @media(min-width: 475px){
         background-image: ${props =>
           props.fileCount >= 3
-            ? `url('${props.imgDir}${props.fileName}_3.${props.imgFormat}')`
+            ? `url('${BASE_URL}${props.imgDir}${props.fileName}_3.${props.imgFormat}')`
             : null}
     }
     @media(min-width: 587px){
         background-image: ${props =>
           props.fileCount >= 4
-            ? `url('${props.imgDir}${props.fileName}_4.${props.imgFormat}')`
+            ? `url('${BASE_URL}${props.imgDir}${props.fileName}_4.${props.imgFormat}')`
             : null}
     }
     @media(min-width: 677px){
          background-image: ${props =>
            props.fileCount >= 5
-             ? `url('${props.imgDir}${props.fileName}_5.${props.imgFormat}')`
+             ? `url('${BASE_URL}${props.imgDir}${props.fileName}_5.${props.imgFormat}')`
              : null}
     }
     @media(min-width: 758px){
          background-image: ${props =>
            props.fileCount >= 6
-             ? `url('${props.imgDir}${props.fileName}_6.${props.imgFormat}')`
+             ? `url('${BASE_URL}${props.imgDir}${props.fileName}_6.${props.imgFormat}')`
              : null}
     }
     @media(min-width: 835px){
          background-image: ${props =>
            props.fileCount >= 7
-             ? `url('${props.imgDir}${props.fileName}_7.${props.imgFormat}')`
+             ? `url('${BASE_URL}${props.imgDir}${props.fileName}_7.${props.imgFormat}')`
              : null}
     }
     @media(min-width: 900px){
          background-image: ${props =>
            props.fileCount >= 8
-             ? `url('${props.imgDir}${props.fileName}_8.${props.imgFormat}')`
+             ? `url('${BASE_URL}${props.imgDir}${props.fileName}_8.${props.imgFormat}')`
              : null}
     }
     @media(min-width: 970px){
          background-image: ${props =>
            props.fileCount >= 9
-             ? `url('${props.imgDir}${props.fileName}_9.${props.imgFormat}')`
+             ? `url('${BASE_URL}${props.imgDir}${props.fileName}_9.${props.imgFormat}')`
              : null}
     }
     @media(min-width: 1037px){
          background-image: ${props =>
            props.fileCount >= 10
-             ? `url('${props.imgDir}${props.fileName}_10.${props.imgFormat}')`
+             ? `url('${BASE_URL}${props.imgDir}${props.fileName}_10.${props.imgFormat}')`
              : null}
     }
     @media(min-width: 1099px){
         background-image: ${props =>
           props.fileCount >= 11
-            ? `url('${props.imgDir}${props.fileName}_11.${props.imgFormat}')`
+            ? `url('${BASE_URL}${props.imgDir}${props.fileName}_11.${props.imgFormat}')`
             : null}
     }
     @media(min-width: 1150px){
          background-image: ${props =>
            props.fileCount >= 12
-             ? `url('${props.imgDir}${props.fileName}_12.${props.imgFormat}')`
+             ? `url('${BASE_URL}${props.imgDir}${props.fileName}_12.${props.imgFormat}')`
              : null}
     }
     @media(min-width: 1209px){
         background-image: ${props =>
           props.fileCount >= 13
-            ? `url('${props.imgDir}${props.fileName}_13.${props.imgFormat}')`
+            ? `url('${BASE_URL}${props.imgDir}${props.fileName}_13.${props.imgFormat}')`
             : null}
     }
     @media(min-width: 1266px){
         background-image: ${props =>
           props.fileCount >= 14
-            ? `url('${props.imgDir}${props.fileName}_14.${props.imgFormat}')`
+            ? `url('${BASE_URL}${props.imgDir}${props.fileName}_14.${props.imgFormat}')`
             : null}
     }
     @media(min-width: 1314px){
          background-image: ${props =>
            props.fileCount >= 15
-             ? `url('${props.imgDir}${props.fileName}_15.${props.imgFormat}')`
+             ? `url('${BASE_URL}${props.imgDir}${props.fileName}_15.${props.imgFormat}')`
              : null}
     }
     @media(min-width: 1365px){
          background-image: ${props =>
            props.fileCount >= 16
-             ? `url('${props.imgDir}${props.fileName}_16.${props.imgFormat}')`
+             ? `url('${BASE_URL}${props.imgDir}${props.fileName}_16.${props.imgFormat}')`
              : null}
     }
     @media(min-width: 1397px){
         background-image: ${props =>
           props.fileCount >= 17
-            ? `url('${props.imgDir}${props.fileName}_17.${props.imgFormat}')`
+            ? `url('${BASE_URL}${props.imgDir}${props.fileName}_17.${props.imgFormat}')`
             : null}
     }
     @media(min-width: 1400px){
          background-image: ${props =>
            props.fileCount >= 18
-             ? `url('${props.imgDir}${props.fileName}_18.${props.imgFormat}')`
+             ? `url('${BASE_URL}${props.imgDir}${props.fileName}_18.${props.imgFormat}')`
              : null}
     }
     
@@ -176,7 +177,7 @@ export const ImageDiv = styled.div`
   width: ${props => props.width || "auto"};
   height: ${props => props.height || "auto"};
   min-height: ${props => props.minHeight || "none"};
-  background: ${props => `url('${props.src}')`};
+  background: ${props => `url('${BASE_URL}${props.src}')`};
   background-size: cover;
   grid-area: ${props => `${props.gridArea}`};
   background-position: center;

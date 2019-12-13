@@ -32,7 +32,7 @@ function Home() {
         fullHeight
         alt='Still Waters, Credit: Catharine McCann Maine 1 Photography'
         // src='images/Image_1_Still_Waters_High_Resolution.jpg'
-        imgDir='/images/image_1/'
+        imgDir='images/image_1/'
         fileName='image_1'
         imgFormat='jpg'
         fileCount={18}
@@ -152,7 +152,7 @@ function Home() {
 
       <Jumbotron
         fullHeight
-        imgDir='/images/image_2/'
+        imgDir='images/image_2/'
         fileName='image_2'
         imgFormat='jpg'
         fileCount={5}
@@ -275,7 +275,7 @@ function Home() {
 
       <Jumbotron
         fullHeight
-        imgDir='/images/image_4/'
+        imgDir='images/image_4/'
         fileName='image_4'
         imgFormat='jpg'
         fileCount={5}

@@ -19,7 +19,7 @@ export default function Resources() {
   return (
     <>
       <Jumbotron
-        imgDir='/images/image_18/'
+        imgDir='images/image_18/'
         fileName='image_18'
         imgFormat='jpg'
         fileCount={8}
@@ -131,7 +131,7 @@ export default function Resources() {
       <Divider hidden />
 
       <Jumbotron
-        imgDir='/images/image_9/'
+        imgDir='images/image_9/'
         fileName='image_9'
         imgFormat='jpg'
         fileCount={5}
