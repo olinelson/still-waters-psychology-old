@@ -32,7 +32,7 @@ function Home() {
         fullHeight
         alt='Still Waters, Credit: Catharine McCann Maine 1 Photography'
         // src='images/Image_1_Still_Waters_High_Resolution.jpg'
-        imgDir='/images/image_1/'
+        imgDir='/image_1/'
         fileName='image_1'
         imgFormat='jpg'
         fileCount={18}
