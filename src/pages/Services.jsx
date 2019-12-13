@@ -31,6 +31,7 @@ export default function Services() {
     return (
       <>
         <h1>Counselling and Psychotherapy</h1>
+
         <p>
           Counselling and Psychotherapy are offered for a range of adult life
           issues (see below). Therapy is tailored to each client, with the
@@ -41,7 +42,7 @@ export default function Services() {
           in a briefer timeframe. As such, no two client therapy journeys are
           the same.
         </p>
-
+        <Image fluid size='medium' floated='right' src='images/image_10.jpg' />
         <ul>
           <li>Adult Mental Health (e.g., anxiety, depression)</li>
           <li>Bereavement, Grief and Loss</li>
@@ -69,6 +70,7 @@ export default function Services() {
         </p>
 
         <h4>Therapeutic approaches</h4>
+
         <p>
           Psychologists and psychotherapists are trained in a range of therapy
           models and approaches. If you have experienced counselling in the past
@@ -77,14 +79,16 @@ export default function Services() {
           something new. This may leave you feeling unsure. It is important to
           ask questions if anything seems unclear and to provide regular
           feedback, so your counselling continues to effectively address your
-          life issues and therapeutic aims. At Still Waters Psychology clinical
-          approaches used may include the Conversational Model, Acceptance and
-          Commitment Therapy (ACT), Person-Centred Counselling,
-          Attachment-focused Therapies, Trauma-informed Care, Cognitive
-          Behavioural Therapies, Psychodynamic Psychotherapy and Sensorimotor
-          Therapies.
+          life issues and therapeutic aims.
         </p>
-
+        <Image fluid size='medium' floated='left' src='images/image_8.jpg' />
+        <p>
+          At Still Waters Psychology clinical approaches used may include the
+          Conversational Model, Acceptance and Commitment Therapy (ACT),
+          Person-Centred Counselling, Attachment-focused Therapies,
+          Trauma-informed Care, Cognitive Behavioural Therapies, Psychodynamic
+          Psychotherapy and Sensorimotor Therapies.
+        </p>
         <h4>Types of Clients</h4>
         <p>
           You can attend as a private client (no referral required), paying a

@@ -45,14 +45,14 @@ export default function Resources() {
             <List.Item>
               <List.Icon size='huge' name='doctor' />
               <List.Content>
-                <List.Header> Contact your GP.</List.Header>
+                <List.Header> Contact your GP</List.Header>
               </List.Content>
             </List.Item>
 
             <List.Item>
               <List.Icon size='huge' name='user' />
               <List.Content>
-                <List.Header>Advise a family member or friend.</List.Header>
+                <List.Header>Advise a family member or friend</List.Header>
               </List.Content>
             </List.Item>
 
@@ -158,31 +158,50 @@ export default function Resources() {
         <Card.Group centered>
           <Card
             image='logos/black_dog.jpg'
-            header='Black Dog Institute'
+            // header='Black Dog Institute'
             // meta='https://www.blackdoginstitute.org.au/'
             href='https://www.blackdoginstitute.org.au/'
           />
           <Card
-            image='logos/life_line.png'
-            header='Lifeline'
+            image='logos/lifeline.png'
+            style={{
+              background: "#013D79",
+              justifyContent: "center",
+              padding: ".5rem"
+            }}
+            // header='Lifeline'
             // meta='https://www.lifeline.org.au/'
             href='https://www.lifeline.org.au/'
           />
           <Card
-            image='logos/beyond_blue.png'
-            header='Beyond Blue'
+            image='logos/beyondblue.png'
+            style={{
+              justifyContent: "center",
+              padding: ".5rem"
+            }}
+            // header='Beyond Blue'
             // meta='https://www.beyondblue.org.au/'
             href='https://www.beyondblue.org.au/'
           />
           <Card
-            image='logos/vinnies.png'
-            header='St Vincent de Paul'
+            image='logos/vinnies_logo.png'
+            style={{
+              justifyContent: "center",
+              padding: ".5rem",
+              background: "#004A99"
+            }}
+            // header='St Vincent de Paul'
             // meta='https://www.vinnies.org.au/'
             href='https://www.vinnies.org.au/'
           />
           <Card
             image='logos/grow.png'
-            header='Grow'
+            style={{
+              justifyContent: "center",
+              padding: ".5rem",
+              background: "#F2F2F2"
+            }}
+            // header='Grow'
             // meta='https://www.grow.org.au/'
             href='https://www.grow.org.au/'
           />
