@@ -75,39 +75,51 @@ export default function Resources() {
             <List.Item>
               <List.Icon size='big' name='phone' />
               <List.Content>
-                <List.Header>Emergency 000</List.Header>
+                <List.Header>
+                  <a href='tel:000'>Emergency 000</a>
+                </List.Header>
               </List.Content>
             </List.Item>
 
             <List.Item>
               <List.Icon size='big' name='phone' />
               <List.Content>
-                <List.Header>Lifeline 13 11 14</List.Header>
-              </List.Content>
-            </List.Item>
-            <List.Item>
-              <List.Icon size='big' name='phone' />
-              <List.Content>
-                <List.Header>Kids Helpline 1800 55 1800</List.Header>
-              </List.Content>
-            </List.Item>
-            <List.Item>
-              <List.Icon size='big' name='phone' />
-              <List.Content>
-                <List.Header>Lifeline 13 11 14</List.Header>
-              </List.Content>
-            </List.Item>
-            <List.Item>
-              <List.Icon size='big' name='phone' />
-              <List.Content>
-                <List.Header>MensLine 1300 78 99 78</List.Header>
+                <List.Header>
+                  <a href='tel:131114'>Lifeline 13 11 14</a>
+                </List.Header>
               </List.Content>
             </List.Item>
             <List.Item>
               <List.Icon size='big' name='phone' />
               <List.Content>
                 <List.Header>
-                  Suicide Call Back Service 1300 659 467
+                  <a href='tel:1800551800'>Kids Helpline 1800 55 1800</a>
+                </List.Header>
+              </List.Content>
+            </List.Item>
+            <List.Item>
+              <List.Icon size='big' name='phone' />
+              <List.Content>
+                <List.Header>
+                  <a href='tel:131114'>Lifeline 13 11 14</a>
+                </List.Header>
+              </List.Content>
+            </List.Item>
+            <List.Item>
+              <List.Icon size='big' name='phone' />
+              <List.Content>
+                <List.Header>
+                  <a href='tel:1300789978'>MensLine 1300 78 99 78</a>
+                </List.Header>
+              </List.Content>
+            </List.Item>
+            <List.Item>
+              <List.Icon size='big' name='phone' />
+              <List.Content>
+                <List.Header>
+                  <a href='tel:1300659467'>
+                    Suicide Call Back Service 1300 659 467
+                  </a>
                 </List.Header>
               </List.Content>
             </List.Item>
