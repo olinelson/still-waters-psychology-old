@@ -195,57 +195,84 @@ export default function Resources() {
             href='https://www.vinnies.org.au/'
           />
           <Card
-            image='logos/grow.png'
+            image='logos/grow_logo.png'
             style={{
               justifyContent: "center",
-              padding: ".5rem",
-              background: "#F2F2F2"
+              padding: ".5rem"
+              // background: "#F2F2F2"
             }}
             // header='Grow'
             // meta='https://www.grow.org.au/'
             href='https://www.grow.org.au/'
           />
           <Card
-            image='logos/quest.png'
-            header='Quest for Life Foundation'
+            image='logos/quest_for_life.png'
+            style={{
+              justifyContent: "center",
+              padding: ".5rem"
+              // background: "#F2F2F2"
+            }}
+            // header='Quest for Life Foundation'
             // meta='https://www.questforlife.com.au/'
             href='https://www.questforlife.com.au/'
           />
           <Card
+            style={{
+              justifyContent: "center",
+              padding: ".5rem"
+              // background: "#F2F2F2"
+            }}
             image='logos/mental_health_australia.png'
-            header='Mental Health Australia'
-            // meta='https://mhaustralia.org/'
             href='https://mhaustralia.org/'
           />
           <Card
-            // image='logos/black_dog.jpg'
-            header='Mental Health Association (NSW)'
+            image='logos/way_ahead.png'
+            style={{
+              justifyContent: "center",
+              padding: ".5rem"
+            }}
+            // b
+            // header='Mental Health Association (NSW)'
             // meta='https://wayahead.org.au/'
             href='https://wayahead.org.au/'
           />
           <Card
-            image='logos/sane.png'
-            header='Sane Australia'
+            style={{
+              justifyContent: "center"
+              // padding: ".5rem",
+              // background: "#49ADF8"
+            }}
+            // content={<Image size='tiny' src='logos/sane.png' />}
+            image='logos/sane_blue.jpg'
+            // header='Sane Australia'
             // meta='hhttps://www.sane.org/'
-            href='hhttps://www.sane.org/'
+            href='hhttps://www.sane.org'
           />
           <Card
-            image='logos/mhca.png'
-            header='Mental Health Carers Australia'
+            image='logos/mental_health_careers.png'
+            style={{
+              justifyContent: "center",
+              padding: ".5rem"
+            }}
+            // header='Mental Health Carers Australia'
             // meta='https://www.mentalhealthcarersaustralia.org.au/'
             href='https://www.mentalhealthcarersaustralia.org.au/'
           />
 
           <Card
-            // image='logos/mhca.png'
+            image='logos/head_to_health.png'
             header='Mind Health Connect'
             // meta='https://www.mentalhealthcarersaustralia.org.au/'
             href='https://headtohealth.gov.au/'
           />
 
           <Card
-            // image='logos/mhca.png'
-            header='Open Minds'
+            style={{
+              justifyContent: "center",
+              padding: ".5rem"
+            }}
+            image='logos/open_minds.png'
+            // header='Open Minds'
             // meta='https://www.mentalhealthcarersaustralia.org.au/'
             href='https://www.openminds.org.au/'
           />
