@@ -19,7 +19,7 @@ export default function Resources() {
   return (
     <>
       <Jumbotron
-        imgDir='/image_18/'
+        imgDir='/images/image_18/'
         fileName='image_18'
         imgFormat='jpg'
         fileCount={8}
@@ -131,9 +131,10 @@ export default function Resources() {
       <Divider hidden />
 
       <Jumbotron
-        // fullHeight
-        alt='Still Waters, Credit: Catharine McCann
-Maine 1 Photography'
+        imgDir='/images/image_9/'
+        fileName='image_9'
+        imgFormat='jpg'
+        fileCount={5}
         src='images/Image_9_Therapy_1.jpg'
       />
 

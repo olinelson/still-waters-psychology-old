@@ -169,7 +169,7 @@ export default function Services() {
         alt='Still Waters, Credit: Catharine McCann
 Maine 1 Photography'
         // src='images/Image_6_Sunset_with_rocks.jpg'
-        imgDir='/image_6/'
+        imgDir='/images/image_6/'
         fileName='image_6'
         imgFormat='jpg'
         fileCount={11}

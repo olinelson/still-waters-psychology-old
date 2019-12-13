@@ -32,7 +32,7 @@ function Home() {
         fullHeight
         alt='Still Waters, Credit: Catharine McCann Maine 1 Photography'
         // src='images/Image_1_Still_Waters_High_Resolution.jpg'
-        imgDir='/image_1/'
+        imgDir='/images/image_1/'
         fileName='image_1'
         imgFormat='jpg'
         fileCount={18}
@@ -152,9 +152,10 @@ function Home() {
 
       <Jumbotron
         fullHeight
-        alt='Still Waters, Credit: Catharine McCann
-Maine 1 Photography'
-        src='images/Image_2_Sunset.jpg'
+        imgDir='/images/image_2/'
+        fileName='image_2'
+        imgFormat='jpg'
+        fileCount={5}
       >
         <JumboMessage style={{ width: "90vw" }}>
           <Segment basic>
@@ -274,9 +275,10 @@ Maine 1 Photography'
 
       <Jumbotron
         fullHeight
-        alt='Still Waters, Credit: Catharine McCann
-Maine 1 Photography'
-        src='images/Image_4_Blue_Sunset.jpg'
+        imgDir='/images/image_4/'
+        fileName='image_4'
+        imgFormat='jpg'
+        fileCount={5}
       >
         <JumboMessage style={{ width: "90vw" }}>
           <Segment basic>

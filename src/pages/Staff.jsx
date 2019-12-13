@@ -206,7 +206,7 @@ export default function Staff() {
       <Jumbotron
         alt='Still Waters, Credit: Catharine McCann
 Maine 1 Photography'
-        imgDir='/image_11/'
+        imgDir='/images/image_11/'
         fileName='image_11'
         imgFormat='jpg'
         fileCount={13}

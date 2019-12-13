@@ -72,7 +72,7 @@ export default function Contact() {
   return (
     <>
       <Jumbotron
-        imgDir='/image_16/'
+        imgDir='/images/image_16/'
         fileName='image_16'
         imgFormat='jpg'
         fileCount={19}
