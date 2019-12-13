@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Header, Container, Grid } from "semantic-ui-react";
+import { Header, Grid } from "semantic-ui-react";
 import { BASE_URL } from "../config";
 
 export const JumboHeader = styled(Header)`

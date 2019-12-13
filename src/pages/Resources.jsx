@@ -1,19 +1,6 @@
 import React from "react";
-import {
-  Container,
-  Card,
-  Divider,
-  Image,
-  List,
-  Icon,
-  Segment
-} from "semantic-ui-react";
-import {
-  Jumbotron,
-  JumboMessage,
-  JumboHeader,
-  CreditContainer
-} from "../components/StyledComponents";
+import { Container, Card, Divider, List, Segment } from "semantic-ui-react";
+import { Jumbotron } from "../components/StyledComponents";
 
 export default function Resources() {
   return (
@@ -141,8 +128,6 @@ export default function Resources() {
       <Divider hidden />
 
       <Container text>
-        {/* <Image src='images/Image_19_Hands.jpg' /> */}
-
         <h1>Support Organizations</h1>
 
         <p>
@@ -158,8 +143,6 @@ export default function Resources() {
         <Card.Group centered>
           <Card
             image='logos/black_dog.jpg'
-            // header='Black Dog Institute'
-            // meta='https://www.blackdoginstitute.org.au/'
             href='https://www.blackdoginstitute.org.au/'
           />
           <Card
@@ -169,8 +152,6 @@ export default function Resources() {
               justifyContent: "center",
               padding: ".5rem"
             }}
-            // header='Lifeline'
-            // meta='https://www.lifeline.org.au/'
             href='https://www.lifeline.org.au/'
           />
           <Card
@@ -179,8 +160,6 @@ export default function Resources() {
               justifyContent: "center",
               padding: ".5rem"
             }}
-            // header='Beyond Blue'
-            // meta='https://www.beyondblue.org.au/'
             href='https://www.beyondblue.org.au/'
           />
           <Card
@@ -190,8 +169,6 @@ export default function Resources() {
               padding: ".5rem",
               background: "#004A99"
             }}
-            // header='St Vincent de Paul'
-            // meta='https://www.vinnies.org.au/'
             href='https://www.vinnies.org.au/'
           />
           <Card
@@ -199,10 +176,7 @@ export default function Resources() {
             style={{
               justifyContent: "center",
               padding: ".5rem"
-              // background: "#F2F2F2"
             }}
-            // header='Grow'
-            // meta='https://www.grow.org.au/'
             href='https://www.grow.org.au/'
           />
           <Card
@@ -210,17 +184,13 @@ export default function Resources() {
             style={{
               justifyContent: "center",
               padding: ".5rem"
-              // background: "#F2F2F2"
             }}
-            // header='Quest for Life Foundation'
-            // meta='https://www.questforlife.com.au/'
             href='https://www.questforlife.com.au/'
           />
           <Card
             style={{
               justifyContent: "center",
               padding: ".5rem"
-              // background: "#F2F2F2"
             }}
             image='logos/mental_health_australia.png'
             href='https://mhaustralia.org/'
@@ -231,21 +201,13 @@ export default function Resources() {
               justifyContent: "center",
               padding: ".5rem"
             }}
-            // b
-            // header='Mental Health Association (NSW)'
-            // meta='https://wayahead.org.au/'
             href='https://wayahead.org.au/'
           />
           <Card
             style={{
               justifyContent: "center"
-              // padding: ".5rem",
-              // background: "#49ADF8"
             }}
-            // content={<Image size='tiny' src='logos/sane.png' />}
             image='logos/sane_blue.jpg'
-            // header='Sane Australia'
-            // meta='hhttps://www.sane.org/'
             href='hhttps://www.sane.org'
           />
           <Card
@@ -254,15 +216,12 @@ export default function Resources() {
               justifyContent: "center",
               padding: ".5rem"
             }}
-            // header='Mental Health Carers Australia'
-            // meta='https://www.mentalhealthcarersaustralia.org.au/'
             href='https://www.mentalhealthcarersaustralia.org.au/'
           />
 
           <Card
             image='logos/head_to_health.png'
             header='Mind Health Connect'
-            // meta='https://www.mentalhealthcarersaustralia.org.au/'
             href='https://headtohealth.gov.au/'
           />
 
@@ -272,8 +231,6 @@ export default function Resources() {
               padding: ".5rem"
             }}
             image='logos/open_minds.png'
-            // header='Open Minds'
-            // meta='https://www.mentalhealthcarersaustralia.org.au/'
             href='https://www.openminds.org.au/'
           />
         </Card.Group>

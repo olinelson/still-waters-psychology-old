@@ -202,27 +202,7 @@ function Home() {
           </Segment>
         </JumboMessage>
 
-        <CreditContainer>
-          {/* <Popup
-            size='mini'
-            basic
-            hoverable
-            style={{
-              borderRadius: 0,
-              background: "rgba(0,0,0,0)"
-            }}
-            inverted
-            content={
-              <a
-                style={{ color: "inherit" }}
-                href='https://www.maine1photography.com/'
-              >
-                ‘Still Waters’ – Catharine McCann
-              </a>
-            }
-            trigger={<Icon size='small' name='info' />}
-          /> */}
-        </CreditContainer>
+        <CreditContainer></CreditContainer>
       </Jumbotron>
 
       <Divider hidden />
@@ -298,86 +278,13 @@ function Home() {
           </Segment>
         </JumboMessage>
 
-        <CreditContainer>
-          {/* <Popup
-            size='mini'
-            basic
-            hoverable
-            style={{
-              borderRadius: 0,
-              background: "rgba(0,0,0,0)"
-            }}
-            inverted
-            content={
-              <a
-                style={{ color: "inherit" }}
-                href='https://www.maine1photography.com/'
-              >
-                ‘Still Waters’ – Catharine McCann
-              </a>
-            }
-            trigger={<Icon size='small' name='info' />}
-          /> */}
-        </CreditContainer>
+        <CreditContainer></CreditContainer>
       </Jumbotron>
-
-      {/* <blockquote cite='https://www.huxley.net/bnw/four.html'>
-          <Icon name='quote left' />
-          <p>
-            The Lord is my shepherd; I shall not want. He makes me lie down in
-            green pastures. He leads me beside still waters. He restores my
-            soul.
-          </p>
-          <footer>
-            <small>
-              Psalm 23: 1: 3 , <cite>Holy Bible, ESV®, 2001</cite>
-            </small>
-          </footer>
-        </blockquote> */}
 
       <Divider hidden />
 
       <Container text>
         <Faqs />
-        {/* 
-        <h1>Location</h1>
-        <p>
-          We offer in-person sessions at Smeaton Grange (near Narellan NSW) and
-          phone and video sessions (all by appointment).{" "}
-        </p>
-
-        <h1>Fees and Funding</h1>
-        <p>
-          We provide psychological services under Medicare, Private Health
-          Funds, NDIS (self-managed only) and privately. We charge a gap fee,
-          this discussed with clients at initial appointments.
-        </p>
-
-        <h1>Payment Options </h1>
-        <p>
-          Clients can pay via Direct Bank transfer, and/or credit card and upon
-          receiving their session receipts, can seek a reimbursement from
-          Medicare, their Health fund and/or NDIS (self-managed).
-        </p>
-
-        <h1>Transport and Parking</h1>
-        <p>Parking is readily available, with wheelchair access.</p>
-
-        <h1>Making an Appointment</h1>
-        <p>
-          Taking the first step towards improving the quality of your
-          psychological health, wellbeing and relationships may feel daunting,
-          especially if you have no prior experience with counselling.{" "}
-        </p>
-        <p>
-          You can arrange an appointment by phoning 0466 231 620 or by sending
-          an enquiry from the <Link to='/contact'>Contact Page</Link>.
-        </p>
-        <p>
-          We will guide you through setting up an initial appointment and will
-          happily answer any questions you might have about the services we
-          offer.{" "}
-        </p> */}
       </Container>
     </>
   );

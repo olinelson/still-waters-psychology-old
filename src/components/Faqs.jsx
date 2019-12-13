@@ -18,9 +18,6 @@ export default function FAQS() {
           </>
         )
       }
-      //   content: [
-      //     "We offer in-person sessions at Smeaton Grange (near Narellan NSW) and phone and video sessions (all by appointment)."
-      //   ].join(" ")
     },
     {
       key: "1",
