@@ -1,14 +1,13 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Jumbotron } from "../components/StyledComponents";
 import {
   Container,
   Image,
   Grid,
-  Segment,
   Menu,
   Divider,
-  Header,
-  List
+  Header
 } from "semantic-ui-react";
 
 export default function Staff() {
@@ -87,7 +86,7 @@ export default function Staff() {
           sense-making in the context of trauma and loss; and health
           practitioner professional formation. My research has been published in
           peer-reviewed journals and book chapters, the details of which are
-          located on the Resource page (insert link){" "}
+          located on the <Link to='/resources'>Resource page</Link>
         </p>
         <p>
           I am also an academic educator and, until recently, was Head of the

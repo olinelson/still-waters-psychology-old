@@ -193,7 +193,7 @@ function Home() {
                   </List>
                 </CenteredGridColumn>
                 <CenteredGridColumn textAlign='center'>
-                  <Button inverted basic size='big'>
+                  <Button as={Link} to='/contact' inverted basic size='big'>
                     Book Appointment
                   </Button>
                 </CenteredGridColumn>
