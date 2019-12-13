@@ -41,14 +41,28 @@ export default function ContactForm() {
         required
         label='Full Name'
         name='name'
-        placeholder='Mike Nock'
+        placeholder='Carl Jung'
       />
       <Form.Input
         required
         label='Email'
         name='email'
         type='email'
-        placeholder='pocket_science@gmail.com'
+        placeholder='carl_jung@gmail.com'
+      />
+      <Form.Input
+        required
+        label='Phone Number'
+        name='phone'
+        type='phone'
+        placeholder='0400123123'
+      />
+
+      <Form.Input
+        required
+        label='Best Contact Time'
+        name='best contact time'
+        type='time'
       />
 
       <Form.TextArea

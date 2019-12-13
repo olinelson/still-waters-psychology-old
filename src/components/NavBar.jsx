@@ -9,7 +9,7 @@ function NavBar(props) {
     z-index: 1;
     position: fixed;
     width: 100vw;
-    background: rgb(255, 255, 255);
+    //  background: rgba(0, 0, 0, 0.1) !important;
     background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.3) 40%,
