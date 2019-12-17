@@ -1,17 +1,23 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
-import { HashRouter as Router, Route, Link, NavLink } from "react-router-dom";
-import { CSSTransition } from "react-transition-group";
+
+// Router
+import { HashRouter as Router, Route } from "react-router-dom";
+
+// pages
 import Home from "./pages/Home";
 import Resources from "./pages/Resources";
 import Services from "./pages/Services";
 import Staff from "./pages/Staff";
 import Contact from "./pages/Contact";
-import Footer from "./components/Footer";
 
+// components
+import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import SideBarMenuItems from "./components/SideBarMenuItems";
+
+// UI
 import { Sidebar, Menu } from "semantic-ui-react";
+import { CSSTransition } from "react-transition-group";
 
 const routes = [
   { path: "/", name: "Home", Component: Home },

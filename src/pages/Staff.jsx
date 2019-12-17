@@ -7,7 +7,8 @@ import {
   Grid,
   Menu,
   Divider,
-  Header
+  Header,
+  Card
 } from "semantic-ui-react";
 
 export default function Staff() {
@@ -23,6 +24,9 @@ export default function Staff() {
 
       case "memberships":
         return memberships();
+
+      default:
+        return biography();
     }
   };
 
@@ -107,7 +111,6 @@ export default function Staff() {
 
   const qualifications = () => {
     return (
-      // <Container text>
       <>
         <h1>Qualifications</h1>
         <p>
@@ -178,7 +181,51 @@ export default function Staff() {
           I hold a range of professional association memberships and provider
           rights:
         </p>
-        <ul>
+        <Card.Group centered>
+          <Card
+            image='logos/medicare.jpg'
+            style={{
+              justifyContent: "center",
+              padding: ".5rem"
+            }}
+            href='https://www.humanservices.gov.au/organisations/health-professionals?utm_id=9'
+          />
+          <Card
+            image='logos/ahpra.png'
+            style={{
+              justifyContent: "center",
+              padding: ".5rem"
+            }}
+            href='https://www.ahpra.gov.au/'
+          />
+          <Card
+            image='logos/aps.jpeg'
+            style={{
+              justifyContent: "center",
+              padding: ".5rem"
+            }}
+            href='https://www.beyondblue.org.au/'
+          />
+          <Card
+            image='logos/apa.png'
+            style={{
+              justifyContent: "center",
+              padding: ".5rem",
+              background: "white"
+            }}
+            href='https://www.apa.org/index'
+          />
+          <Card
+            image='logos/ccaa.png'
+            style={{
+              justifyContent: "center",
+              padding: ".5rem"
+            }}
+            href='https://ccaa.net.au/'
+          />
+        </Card.Group>
+
+        {/* <ul>
           <li>
             I am registered psychologist with Australian Health Professionals
             Regulation Agency - Psychology Board of Australia{" "}
@@ -195,7 +242,7 @@ export default function Staff() {
             I am an associate member of the Christian Counselling Association
             (CCAA).{" "}
           </li>
-        </ul>
+        </ul> */}
       </>
     );
   };

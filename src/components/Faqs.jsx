@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Header, Accordion, Container, Table, List } from "semantic-ui-react";
+import { Header, Accordion, Container } from "semantic-ui-react";
 
 export default function FAQS() {
   const panels = [

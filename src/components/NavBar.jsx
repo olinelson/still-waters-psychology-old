@@ -2,14 +2,12 @@ import React from "react";
 import { Menu, Icon, Responsive } from "semantic-ui-react";
 import styled from "styled-components";
 import { Link, withRouter } from "react-router-dom";
-import { black } from "ansi-colors";
 
 function NavBar(props) {
   const FixedMenu = styled(Menu)`
     z-index: 1;
     position: fixed;
     width: 100vw;
-    //  background: rgba(0, 0, 0, 0.1) !important;
     background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.3) 40%,
@@ -20,7 +18,6 @@ function NavBar(props) {
     z-index: 1;
     position: fixed;
     width: 100vw;
-    // background-color: rgba(0, 0, 0, 0) !important;
     background: rgb(255, 255, 255);
     background: linear-gradient(
       180deg,
@@ -38,7 +35,6 @@ function NavBar(props) {
               color: "white"
             }}
             size='big'
-            // inverted
             name={props.sideBarIsOpen ? "close" : "bars"}
             onClick={() => props.setVisible(true)}
           />

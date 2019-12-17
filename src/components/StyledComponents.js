@@ -5,7 +5,6 @@ import { BASE_URL } from "../config";
 export const JumboHeader = styled(Header)`
   font-size: 4rem;
   color: white;
-  // text-shadow: 1px 1px 2px black;
 `;
 
 export const Jumbotron = styled.div`
@@ -157,7 +156,6 @@ export const AlbumContainer = styled.div`
 export const TwoColumnContainer = styled.div`
   grid-template-rows: auto 1fr;
   display: grid !important;
-  // justify-content: center;
   grid-template-columns: 1fr 3fr;
   grid-template-areas: ${props =>
     props.imgleft ? "'. heading' 'img p1'" : "'heading .' 'p1 img'"};
@@ -165,9 +163,7 @@ export const TwoColumnContainer = styled.div`
   margin-top: 2rem;
 
   @media (max-width: 40rem) {
-    // grid-template-columns: 1fr;
     grid-template-areas: "heading heading" "img img" "p1 p1";
-    // grid-template-rows: minmax(25vh, auto);
     grid-template-rows: 1fr;
     grid-gap: 1rem;
   }

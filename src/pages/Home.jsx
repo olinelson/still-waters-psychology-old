@@ -8,9 +8,6 @@ import {
   Popup,
   Button,
   Icon,
-  Card,
-  Image,
-  Item,
   Grid,
   Segment,
   List
@@ -31,7 +28,6 @@ function Home() {
       <Jumbotron
         fullHeight
         alt='Still Waters, Credit: Catharine McCann Maine 1 Photography'
-        // src='images/Image_1_Still_Waters_High_Resolution.jpg'
         imgDir='images/image_1/'
         fileName='image_1'
         imgFormat='jpg'
@@ -130,8 +126,6 @@ function Home() {
           </Grid.Row>
         </Grid>
       </Container>
-
-      {/* <Divider hidden /> */}
 
       <Container text>
         <p>

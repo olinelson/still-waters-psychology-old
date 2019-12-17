@@ -4,7 +4,6 @@ import {
   Container,
   Image,
   Grid,
-  Segment,
   Menu,
   Divider,
   Header,
@@ -24,6 +23,9 @@ export default function Services() {
 
       case "workshops":
         return workshops();
+
+      default:
+        return counselling();
     }
   };
 

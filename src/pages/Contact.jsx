@@ -1,6 +1,8 @@
 import React from "react";
 
 import ContactForm from "../components/ContactForm";
+import { Jumbotron } from "../components/StyledComponents";
+
 import {
   Embed,
   Container,
@@ -9,7 +11,7 @@ import {
   Header,
   Accordion
 } from "semantic-ui-react";
-import { Jumbotron } from "../components/StyledComponents";
+
 export default function Contact() {
   const panels = [
     {
