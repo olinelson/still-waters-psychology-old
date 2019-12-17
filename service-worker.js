@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/still-waters-psychology/precache-manifest.ce53ff1c99ac6152333618c9aff5aec6.js"
+  "/still-waters-psychology/precache-manifest.54cc20acaa21f203f6f0b47d463cf655.js"
 );
 
 self.addEventListener('message', (event) => {
