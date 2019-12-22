@@ -49,3 +49,6 @@ blockquote {
 p {
   text-align: justify;
 }
+.ui.secondary.pointing.menu.item {
+  color: red !important;
+}

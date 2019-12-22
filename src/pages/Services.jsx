@@ -44,7 +44,6 @@ export default function Services() {
           in a briefer timeframe. As such, no two client therapy journeys are
           the same.
         </p>
-        <Image fluid size='medium' floated='right' src='images/image_10.jpg' />
         <ul>
           <li>Adult Mental Health (e.g., anxiety, depression)</li>
           <li>Bereavement, Grief and Loss</li>
@@ -62,14 +61,17 @@ export default function Services() {
           <li>Life Adjustment and Life Transitions</li>
         </ul>
         <p>
-          More broadly, counselling and psychotherapy are framed within a
-          developmentally oriented, lifespan perspective, drawing upon
-          contemporary evidence-based, trauma-informed models of care. There is
+          More broadly, counselling involves an active, collaborative,
+          conversational partnership, where the therapist works for the benefit
+          of each client, individual circumstances considered within a a
+          developmentally oriented, lifespan perspective. Drawing upon
+          contemporary evidence-based, trauma-informed models of care, there is
           an overall focus on client safety, symptom stabilization and
           management, recovery and integration, restoration and transformation.
-          Counselling involves an active, collaborative, conversational
-          partnership, where the therapist works for the benefit of each client.{" "}
+          As a team the client and therapist work together so achieve each
+          client’s personal therapy goals.
         </p>
+        <Image fluid src='images/image_10.jpg' />
 
         <h4>Therapeutic approaches</h4>
 
@@ -83,7 +85,7 @@ export default function Services() {
           feedback, so your counselling continues to effectively address your
           life issues and therapeutic aims.
         </p>
-        <Image fluid size='medium' floated='left' src='images/image_8.jpg' />
+
         <p>
           At Still Waters Psychology clinical approaches used may include the
           Conversational Model, Acceptance and Commitment Therapy (ACT),
@@ -91,6 +93,7 @@ export default function Services() {
           Trauma-informed Care, Cognitive Behavioural Therapies, Psychodynamic
           Psychotherapy and Sensorimotor Therapies.
         </p>
+        <Image fluid src='images/image_8.jpg' />
         <h4>Types of Clients</h4>
         <p>
           You can attend as a private client (no referral required), paying a
@@ -137,15 +140,20 @@ export default function Services() {
         <p>
           Engaging in continued reflection about one’s clinical work is a
           requirement for all healthcare professionals and those working withing
-          church settings.
+          church settings. Consequently, your therapist participates in regular
+          supervision with experienced peers, to ensure the continuance of
+          quality and relevant care to all clients. Peer supervision using
+          de-identified client information is one aspect of mandated
+          professional development psychologists must complete annually.
         </p>
         <p>
-          Individual and group supervision is available to psychologists,
-          counsellors, psychotherapists and those working in church settings.
+          In addition, Still Waters Psychology offers individual and group
+          supervision to psychologists, counsellors, psychotherapists and those
+          working in church settings (excluding intern psychologists).
           Supervisees are recommended to check with their professional
           association regarding the required qualifications and experiences for
           supervisors as associations set their own criteria regarding
-          supervision.{" "}
+          supervision.
         </p>
       </>
     );

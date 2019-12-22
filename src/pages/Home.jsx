@@ -10,7 +10,9 @@ import {
   Icon,
   Grid,
   Segment,
-  List
+  List,
+  Item,
+  Image
 } from "semantic-ui-react";
 import {
   JumboHeader,
@@ -34,10 +36,12 @@ function Home() {
         fileCount={18}
       >
         <JumboMessage>
-          <JumboHeader size='huge' as={"h1"} inverted>
-            Still Waters Psychology
-          </JumboHeader>
-          <Header.Subheader style={{ color: "white" }} as='h3'>
+          {/* <JumboHeader size='huge' as={"h1"} inverted></JumboHeader> */}
+          <Image fluid size='large' src='logos/color_logo_no_background.png' />
+          <Header.Subheader
+            style={{ color: "#BEA469", marginLeft: "1.5rem" }}
+            as='h3'
+          >
             Compassion, Hope, Wisdom
           </Header.Subheader>
         </JumboMessage>
@@ -83,7 +87,7 @@ function Home() {
               <ImageDiv
                 width='20rem'
                 height='20rem'
-                src='images/Image_24_Stack.jpg'
+                src='images/still_mind.jpg'
               />
 
               <h2>A still mind</h2>
@@ -94,7 +98,7 @@ function Home() {
               <ImageDiv
                 width='20rem'
                 height='20rem'
-                src='images/Image_21_Wave.jpg'
+                src='images/peaceful_heart.jpg'
               />
 
               <h2>A peaceful heart</h2>
@@ -202,12 +206,18 @@ function Home() {
       <Divider hidden />
 
       <Container text>
+        <Item.Image
+          floated='right'
+          size='medium'
+          src='images/image_3_mother_child.jpg'
+        />
         <p>
           The image of ‘still waters’ provides a powerful metaphor for the quiet
           often longed for when we are faced with demanding lives, a turbulent
           world, personal crisis, and/or a sense that personal growth is
-          required.{" "}
+          required.
         </p>
+
         <p>
           Whether alone or in the company of another (e.g., parent, partner,
           friend, therapist, the divine) settling down alongside a body of water

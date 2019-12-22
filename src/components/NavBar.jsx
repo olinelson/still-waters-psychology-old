@@ -8,22 +8,22 @@ function NavBar(props) {
     z-index: 1;
     position: fixed;
     width: 100vw;
-    background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.3) 40%,
-      rgba(255, 255, 255, 0) 100%
-    ) !important;
+    // background: linear-gradient(
+    //   180deg,
+    //   rgba(0, 0, 0, 0.3) 40%,
+    //   rgba(255, 255, 255, 0) 100%
+    // ) !important;
   `;
   const FixedHamburgerMenu = styled(Menu)`
     z-index: 1;
     position: fixed;
     width: 100vw;
-    background: rgb(255, 255, 255);
-    background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.3) 40%,
-      rgba(255, 255, 255, 0) 100%
-    ) !important;
+    // background: rgb(255, 255, 255);
+    // background: linear-gradient(
+    //   180deg,
+    //   rgba(0, 0, 0, 0.3) 40%,
+    //   rgba(255, 255, 255, 0) 100%
+    // ) !important;
   `;
 
   return (
@@ -31,9 +31,6 @@ function NavBar(props) {
       <Responsive secondary as={FixedHamburgerMenu} {...Responsive.onlyMobile}>
         <Menu.Item>
           <Icon
-            style={{
-              color: "white"
-            }}
             size='big'
             name={props.sideBarIsOpen ? "close" : "bars"}
             onClick={() => props.setVisible(true)}
@@ -41,18 +38,15 @@ function NavBar(props) {
         </Menu.Item>
       </Responsive>
       <Responsive
-        inverted
+        // inverted
         secondary
         as={FixedHamburgerMenu}
         {...Responsive.onlyTablet}
       >
         <Menu.Item>
           <Icon
-            style={{
-              color: "white"
-            }}
             size='big'
-            inverted
+            // inverted
             name={props.sideBarIsOpen ? "close" : "bars"}
             onClick={() => props.setVisible(true)}
           />
@@ -60,7 +54,7 @@ function NavBar(props) {
       </Responsive>
       <Responsive
         borderless
-        inverted
+        // inverted
         pointing
         secondary
         as={FixedMenu}

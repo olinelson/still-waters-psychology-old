@@ -23,14 +23,14 @@ export default function FAQS() {
       key: "1",
       title: "Fees and Funding",
       content: [
-        "We provide psychological services under Medicare, Private Health Funds, NDIS (self-managed only) and privately. We charge a gap fee, this discussed with clients at initial appointments."
+        "We provide psychological services under Medicare, Private Health Funds, NDIS (self-managed only) and privately. We charge a gap fee, discussed with clients at initial appointments."
       ].join(" ")
     },
     {
       key: "3",
       title: "Payment Options",
       content: [
-        "Clients can pay via Direct Bank transfer, and/or credit card and upon receiving their session receipts, can seek a reimbursement from Medicare, their Health fund and/or NDIS (self-managed)."
+        "Clients can pay via Direct Bank transfer, credit card, EFTPOS and HICAPS. NDIS (self-managed) clients will need to seek a refund from the NDIA."
       ].join(" ")
     },
     {
