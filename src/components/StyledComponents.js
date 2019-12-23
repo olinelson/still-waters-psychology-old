@@ -13,7 +13,7 @@ export const Jumbotron = styled.div`
     background-repeat: no-repeat !important;
     background-image: ${props =>
       `url('${BASE_URL}${props.imgDir}${props.fileName}_1.${props.imgFormat}')`};
-     height: ${props => (props.fullHeight ? "90vh !important" : "40vh")};
+     height: ${props => (props.fullHeight ? "90vh !important" : "50vh")};
     image-orientation: from-image;
     display: grid;
 
