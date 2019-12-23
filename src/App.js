@@ -9,6 +9,7 @@ import Resources from "./pages/Resources";
 import Services from "./pages/Services";
 import Staff from "./pages/Staff";
 import Contact from "./pages/Contact";
+import Research from "./pages/Research";
 
 // components
 import Footer from "./components/Footer";
@@ -23,6 +24,7 @@ const routes = [
   { path: "/", name: "Home", Component: Home },
   { path: "/services", name: "Services", Component: Services },
   { path: "/staff", name: "Staff", Component: Staff },
+  { path: "/research", name: "Research", Component: Research },
   { path: "/resources", name: "Resources", Component: Resources },
   { path: "/contact", name: "Contact", Component: Contact }
 ];

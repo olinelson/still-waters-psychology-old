@@ -49,12 +49,12 @@ export default function Services() {
           <li>Bereavement, Grief and Loss</li>
           <li>Trauma and Post-trauma Growth</li>
           <li>Spirituality/Faith (e.g. spiritual attachment)</li>
-          <li>Stress - Personal & Workplace</li>
+          <li>Personal & Workplace Stress</li>
           <li>Disability and Illness</li>
           <li>Carer Support</li>
           <li>
-            NDIS (self-managed only) – e.g., Support Coordination, access
-            application planning
+            NDIS (self-managed only) – e.g., support coordination, access
+            application planning, counselling
           </li>
           <li>Relational Issues </li>
           <li>Personal Formation and Personal Development</li>
@@ -68,7 +68,7 @@ export default function Services() {
           contemporary evidence-based, trauma-informed models of care, there is
           an overall focus on client safety, symptom stabilization and
           management, recovery and integration, restoration and transformation.
-          As a team the client and therapist work together so achieve each
+          As a team the client and therapist work together to achieve each
           client’s personal therapy goals.
         </p>
         <Image fluid src='images/Image_19_Hands.jpg' />

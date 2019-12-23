@@ -12,7 +12,8 @@ import {
   Segment,
   List,
   Item,
-  Image
+  Image,
+  Label
 } from "semantic-ui-react";
 import {
   JumboHeader,
@@ -48,12 +49,12 @@ function Home() {
         <CreditContainer>
           <Popup
             size='mini'
-            basic
+            // basic
             hoverable
-            style={{
-              borderRadius: 0,
-              background: "rgba(0,0,0,0)"
-            }}
+            // style={{
+            //   borderRadius: 0,
+            //   background: "rgba(0,0,0,0)"
+            // }}
             inverted
             content={
               <a
@@ -63,7 +64,12 @@ function Home() {
                 ‘Still Waters’ – Catharine McCann
               </a>
             }
-            trigger={<Icon size='small' name='info' />}
+            trigger={
+              <Label color='black'>
+                <Icon size='small' name='image' />
+                credit
+              </Label>
+            }
           />
         </CreditContainer>
       </Jumbotron>
@@ -141,8 +147,8 @@ function Home() {
         <p>
           We also provide clinical supervision and professional development
           workshops and presentations for allied health professionals,
-          chaplains, minsters and church leaders (See Services page for more
-          details).
+          chaplains, minsters and church leaders (See{" "}
+          <Link to='/services'>Services</Link> page for more details).
         </p>
       </Container>
 
@@ -215,10 +221,9 @@ function Home() {
           src='images/image_3_mother_child.jpg'
         />
         <p>
-          The image of ‘still waters’ provides a powerful metaphor for the quiet
-          often longed for when we are faced with demanding lives, a turbulent
-          world, personal crisis, and/or a sense that personal growth is
-          required.
+          The image of ‘still waters’ provides a powerful metaphor of the quiet
+          we often long for when faced with demanding lives, a turbulent world,
+          personal crisis, and/or a sense that personal growth is required.
         </p>
 
         <p>
