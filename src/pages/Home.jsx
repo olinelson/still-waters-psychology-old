@@ -34,7 +34,7 @@ function Home() {
         imgDir='images/image_1/'
         fileName='image_1'
         imgFormat='jpg'
-        fileCount={18}
+        fileCount={5}
       >
         <JumboMessage>
           {/* <JumboHeader size='huge' as={"h1"} inverted></JumboHeader> */}
