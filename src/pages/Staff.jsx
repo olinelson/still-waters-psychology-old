@@ -1069,9 +1069,10 @@ export default function Staff() {
         </ul>
 
         <p>
-          In three of these degrees I completed substantive research theses,
-          focused on some aspect of spirituality and health (e.g., spiritual
-          attachment, developmental trauma and adult Christian spirituality):
+          In three of these degrees included completion of substantive research
+          theses, which focused on some aspect of spirituality and health (e.g.,
+          spiritual attachment, developmental trauma and adult Christian
+          spirituality):
         </p>
 
         <ul>
@@ -1104,9 +1105,40 @@ export default function Staff() {
       <>
         <h1>Professional Memberships & Registrations</h1>
         <p>
+          Supporting the professional life of peers and students have been
+          important to me. Across the years I have resided on numerous
+          professional and external academic committees (e.g., Christian
+          Counsellors Association Australia (CCAA) NSW Executive Committee; CCAA
+          National Executive; Booth College (Salvation Army); Australian
+          Colleges of Ministries (ACOM)) and varied internal academic committees
+          within the institutions with whom I have worked. Currently I am a
+          member of the Psychotherapy and Counselling Federation of Australian
+          (PACFA) Education Accreditation Committee (EPAC), sitting on various
+          of their course accreditation panels.
+        </p>
+        <p>
           I hold a range of professional association memberships and provider
           rights:
         </p>
+        <ol>
+          <li>
+            I am registered psychologist with Australian Health Professionals
+            Regulation Agency - Psychology Board of Australia{" "}
+          </li>
+          <li>I am a registered Medicare provider</li>
+          <li>
+            I am a full member of the Australian Psychological Society (APS)
+          </li>
+          <li>
+            I am a full membership with American Psychological Association
+            (APA).
+          </li>
+          <li>
+            I am an associate member of the Christian Counselling Association
+            (CCAA).{" "}
+          </li>
+        </ol>
+        <Divider hidden />
         <Card.Group centered>
           <Card
             image='logos/medicare.jpg'
@@ -1130,7 +1162,7 @@ export default function Staff() {
               justifyContent: "center",
               padding: ".5rem"
             }}
-            href='https://www.beyondblue.org.au/'
+            href='https://www.psychology.org.au/'
           />
           <Card
             image='logos/apa.png'
@@ -1141,14 +1173,14 @@ export default function Staff() {
             }}
             href='https://www.apa.org/index'
           />
-          <Card
+          {/* <Card
             image='logos/ccaa.png'
             style={{
               justifyContent: "center",
               padding: ".5rem"
             }}
             href='https://ccaa.net.au/'
-          />
+          /> */}
         </Card.Group>
 
         {/* <ul>
@@ -1189,6 +1221,10 @@ export default function Staff() {
           Conference (2018) and keynote speaker for the Australian Chaplaincy
           Conference (ACC) (2017)
         </p>
+        <Divider hidden />
+        <Image src='images/Image_13_Water_drop_3.jpg' />
+
+        <Divider hidden />
         <p>
           I have also held various academic posts – for example, firstly
           Assistant Head (2011) and then Head of the Graduate School of
@@ -1208,6 +1244,7 @@ export default function Staff() {
           counselling sector and the development of next generation of Christian
           counsellors.{" "}
         </p>
+
         <p>
           Prior to Excelsia College, I worked for the Christian’s Hospital at
           Westmead (2004-2012) as a psychologist researcher, part of a team
@@ -1277,7 +1314,7 @@ Maine 1 Photography'
                 active={activeItem === "qualifications"}
                 onClick={() => setActiveItem("qualifications")}
               >
-                <Header as='h4'>Clinical qualifications </Header>
+                <Header as='h4'>Qualifications </Header>
               </Menu.Item>
 
               <Menu.Item
@@ -1288,6 +1325,14 @@ Maine 1 Photography'
                 <Header as='h4'>
                   Professional Memberships & Registrations
                 </Header>
+              </Menu.Item>
+
+              <Menu.Item
+                name='pastRoles'
+                active={activeItem === "pastRoles"}
+                onClick={() => setActiveItem("pastRoles")}
+              >
+                <Header as='h4'>Past Roles</Header>
               </Menu.Item>
             </Menu>
           </Grid.Column>

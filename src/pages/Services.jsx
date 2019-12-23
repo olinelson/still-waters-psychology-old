@@ -134,7 +134,7 @@ export default function Services() {
       <>
         <h1>Clinical Supervision</h1>
         <p>
-          Engaging in continued reflection about one’s clinical work is a
+          En gaging in continued reflection about one’s clinical work is a
           requirement for all healthcare professionals and those working withing
           church settings. Consequently, your therapist participates in regular
           supervision with experienced peers, to ensure the continuance of

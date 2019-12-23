@@ -20,7 +20,7 @@ export default function Resources() {
         <h1>In the event of a mental health emergency</h1>
         <p>
           If you are experiencing an immediate mental health crisis and feel at
-          risk in relation to your personal safety, it is recommended that you:
+          risk regarding your safety, it is recommended that you:
         </p>
       </Container>
 
@@ -29,6 +29,14 @@ export default function Resources() {
       <Container text>
         <Segment>
           <List divided relaxed verticalAlign='middle'>
+            <List.Item>
+              <List.Icon size='huge' name='phone' />
+              <List.Content>
+                <List.Header>
+                  Call 000 if at imminent risk of harming yourself or others.
+                </List.Header>
+              </List.Content>
+            </List.Item>
             <List.Item>
               <List.Icon size='huge' name='doctor' />
               <List.Content>
@@ -44,14 +52,24 @@ export default function Resources() {
             </List.Item>
 
             <List.Item>
+              <List.Icon size='huge' name='slideshare' />
+              <List.Content>
+                <List.Header>
+                  Contact the community mental health team
+                </List.Header>
+                <List.Description>
+                  ask to speak with the intake officer who will be able to guide
+                  you.
+                </List.Description>
+              </List.Content>
+            </List.Item>
+            <List.Item>
               <List.Icon size='huge' name='medkit' />
               <List.Content>
-                <List.Header>Contact the community mental health</List.Header>
-                <List.Description>
-                  at your local hospital and ask to speak with the intake
-                  officer OR present yourself at Emergency at your local
-                  hospital
-                </List.Description>
+                <List.Header>
+                  Present yourself at Emergency at your local hospital
+                </List.Header>
+                <List.Description></List.Description>
               </List.Content>
             </List.Item>
           </List>
@@ -76,15 +94,6 @@ export default function Resources() {
               <List.Icon size='big' name='phone' />
               <List.Content>
                 <List.Header>
-                  <a href='tel:000'>Emergency 000</a>
-                </List.Header>
-              </List.Content>
-            </List.Item>
-
-            <List.Item>
-              <List.Icon size='big' name='phone' />
-              <List.Content>
-                <List.Header>
                   <a href='tel:131114'>Lifeline 13 11 14</a>
                 </List.Header>
               </List.Content>
@@ -94,14 +103,6 @@ export default function Resources() {
               <List.Content>
                 <List.Header>
                   <a href='tel:1800551800'>Kids Helpline 1800 55 1800</a>
-                </List.Header>
-              </List.Content>
-            </List.Item>
-            <List.Item>
-              <List.Icon size='big' name='phone' />
-              <List.Content>
-                <List.Header>
-                  <a href='tel:131114'>Lifeline 13 11 14</a>
                 </List.Header>
               </List.Content>
             </List.Item>
@@ -244,6 +245,24 @@ export default function Resources() {
             }}
             image='logos/open_minds.png'
             href='https://www.openminds.org.au/'
+          />
+          <Card
+            style={{
+              justifyContent: "center",
+              padding: "1rem"
+            }}
+            size='small'
+            image='logos/acon.png'
+            href='https://www.acon.org.au/'
+          />
+          <Card
+            style={{
+              justifyContent: "center",
+              padding: "1rem"
+            }}
+            size='small'
+            image='logos/copmi.png'
+            href='https://http://www.copmi.net.au/'
           />
         </Card.Group>
       </Container>

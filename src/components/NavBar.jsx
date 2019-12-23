@@ -76,6 +76,11 @@ function NavBar(props) {
         <Menu.Item>
           <Icon
             size='big'
+            style={{
+              color: "#C2AB6F",
+              textShadow:
+                "-1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white"
+            }}
             name={props.sideBarIsOpen ? "close" : "bars"}
             onClick={() => props.setVisible(true)}
           />

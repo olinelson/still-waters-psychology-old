@@ -24,7 +24,7 @@ export default function Contact() {
       key: "1",
       title: "Late Arrival Policy",
       content:
-        "Where clients arrive late for a session, the session will still end at the scheduled time, meaning that session will be shorter on that occasion. Time has been reserved for you and only you at the agreed upon time, with other people are scheduled after your time."
+        "Where clients arrive late for a session, the session will still end at the scheduled time, meaning that session will be shorter on that occasion. Time has been reserved for you and only you at the agreed upon time, with other people are scheduled after your time. This approach ensures those attending after you are not kept waiting. Thank you for your understanding in relation to this matter."
     },
     {
       key: "3",
@@ -46,11 +46,11 @@ export default function Contact() {
             </p>
             <ul>
               <li>
-                A 60% cancellation fee will be applied when clients cancel
+                A 75% cancellation fee will be applied when clients cancel
                 within 24 hours of their appointment.
               </li>
               <li>
-                A 40% cancellation fee will be applied when clients cancel
+                A 50% cancellation fee will be applied when clients cancel
                 within 48 hours of their appointment.
               </li>
             </ul>
@@ -59,11 +59,18 @@ export default function Contact() {
               When cancelling a session please advise as to the reason for the
               cancellation. Please note Medicare do not reimburse cancelled
               session and the NDIS cover a limited number of cancellation fees.
+              If you have concerns about this policy, please discuss them with
+              your therapist.
             </p>
             <p>
-              Where a therapist needs to cancel for unexpected reasons you will
-              be offered a replacement appointment at a mutually convenient time
-              at the normal session fee.
+              Please note Medicare do not reimburse cancelled sessions while the
+              NDIS cover only a limited number of cancellation fees.
+            </p>
+            <p>
+              There are rare occasions when, with regret, your therapist needs
+              to cancel a session due to unexpected circumstances. Where this
+              occurs you will be offered a replacement appointment at a mutually
+              convenient time, at the normal session fee.
             </p>
           </>
         )
@@ -77,7 +84,7 @@ export default function Contact() {
         imgDir='images/image_16/'
         fileName='image_16'
         imgFormat='jpg'
-        fileCount={19}
+        fileCount={7}
         style={{
           backgroundPosition: "center"
         }}
@@ -97,13 +104,27 @@ export default function Contact() {
         </p>
 
         <p>
-          You can arrange an appointment by phoning 0466 231 260 or by sending
-          an enquiry using the form below.{" "}
+          You can arrange an appointment by phoning{" "}
+          <a href='tel:0466231620'>0466 231 620</a> or by sending an enquiry
+          using the form below.{" "}
         </p>
 
         <p>
           We will guide you through setting up an initial appointment and will
           happily answer any questions you might have about counselling/therapy.{" "}
+        </p>
+
+        <ContactForm />
+
+        <Divider />
+
+        <h1>Location</h1>
+
+        <p>
+          The practice is located just off Narellan Road, Narellan. It is housed
+          within the Narellan Community Congregational Church. Upon arrival,
+          please enter the church foyer and turn left to find the practice
+          reception area.
         </p>
 
         <Embed
@@ -123,17 +144,6 @@ export default function Contact() {
           </Button>
         </Container>
         <Divider hidden />
-
-        <p>
-          The practice is located just off Narellan Road, Narellan. It is housed
-          within the Narellan Community Congregational Church. Upon arrival,
-          please enter the church foyer and turn left to find the practice
-          reception area.
-        </p>
-
-        <Divider />
-
-        <ContactForm />
 
         <Divider />
 
