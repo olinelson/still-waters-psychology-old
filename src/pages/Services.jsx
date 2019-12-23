@@ -188,7 +188,7 @@ Maine 1 Photography'
       <Container style={{ minHeight: "50vh" }}>
         <Grid stackable>
           <Grid.Column width={4}>
-            <Menu fluid vertical tabular>
+            <Menu fluid vertical>
               <Menu.Item
                 name='counselling'
                 active={activeItem === "counselling"}

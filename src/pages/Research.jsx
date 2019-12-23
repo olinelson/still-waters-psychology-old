@@ -10,7 +10,8 @@ import {
   Card,
   Table,
   Label,
-  Tab
+  Tab,
+  Responsive
 } from "semantic-ui-react";
 export default function Research() {
   const articles = () => {
@@ -1014,11 +1015,42 @@ export default function Research() {
           chapters also presenting work at national and international
           conferences (See below)
         </p>
-
-        <Tab
-          menu={{ fluid: true, vertical: true, tabular: true }}
+        <Responsive
+          as={Tab}
+          menu={{
+            fluid: true,
+            stackable: true,
+            vertical: false
+          }}
           panes={panes}
-        />
+          {...Responsive.onlyMobile}
+        ></Responsive>
+
+        <Responsive
+          as={Tab}
+          menu={{
+            fluid: true,
+            stackable: true,
+            vertical: true
+          }}
+          panes={panes}
+          {...Responsive.onlyTablet}
+        ></Responsive>
+        <Responsive
+          as={Tab}
+          menu={{
+            fluid: true,
+            stackable: true,
+            vertical: true
+          }}
+          panes={panes}
+          {...Responsive.onlyComputer}
+        ></Responsive>
+
+        {/* <Tab
+          menu={{ fluid: true, tabular: true, stackable: true, vertical: true }}
+          panes={panes}
+        /> */}
       </Container>
     </>
   );
