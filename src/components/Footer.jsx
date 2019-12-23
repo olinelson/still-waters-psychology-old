@@ -24,6 +24,7 @@ function Footer(props) {
         <List horizontal inverted={false} divided link size='small'>
           {props.routes.map(r => (
             <Menu.Item
+              key={r.path}
               active={props.location.pathname === r.path}
               as={Link}
               to={r.path}

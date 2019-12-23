@@ -37,12 +37,12 @@ function Home() {
       >
         <JumboMessage>
           {/* <JumboHeader size='huge' as={"h1"} inverted></JumboHeader> */}
-          <Image fluid size='large' src='logos/color_logo_no_background.png' />
+          <Image size='large' src='logos/color_logo_no_background.png' />
           <Header.Subheader
             style={{ color: "#BEA469", marginLeft: "1.5rem" }}
             as='h3'
           >
-            Compassion, Hope, Wisdom
+            {/* Compassion, Hope, Wisdom */}
           </Header.Subheader>
         </JumboMessage>
         <CreditContainer>
@@ -163,7 +163,8 @@ function Home() {
                   <List verticalAlign='middle'>
                     <Header
                       style={{
-                        textShadow: " 1px 1px 2px black"
+                        textShadow: " 1px 1px 2px black",
+                        fontSize: "3rem"
                       }}
                       inverted
                       as='h1'
@@ -172,7 +173,8 @@ function Home() {
                     </Header>
                     <Header
                       style={{
-                        textShadow: " 1px 1px 2px black"
+                        textShadow: " 1px 1px 2px black",
+                        fontSize: "3rem"
                       }}
                       inverted
                       as='h1'
@@ -181,7 +183,8 @@ function Home() {
                     </Header>
                     <Header
                       style={{
-                        textShadow: " 1px 1px 2px black"
+                        textShadow: " 1px 1px 2px black",
+                        fontSize: "3rem"
                       }}
                       inverted
                       as='h1'
@@ -231,6 +234,17 @@ function Home() {
           purposeful living; flexible and adaptive in the face of the
           unexpected.
         </p>
+
+        <Divider />
+
+        <blockquote style={{ color: "black", fontSize: "2rem" }}>
+          <Icon size='large' name='quote left' />
+          <p>‘still waters’ is a metaphor for ‘self-regulation’</p>
+        </blockquote>
+
+        <Divider hidden />
+        <Divider />
+
         <p>
           When faced with difficult situations and accompanying challenging
           thoughts and feelings, it is easy to become overwhelmed and
@@ -267,13 +281,13 @@ function Home() {
         <JumboMessage style={{ width: "90vw" }}>
           <Segment basic>
             <blockquote cite='https://www.huxley.net/bnw/four.html'>
-              <Icon name='quote left' />
-              <p>
+              <Icon size='large' name='quote left' />
+              <p style={{ fontSize: "2rem" }}>
                 The Lord is my shepherd; I shall not want. He makes me lie down
                 in green pastures. He leads me beside still waters. He restores
                 my soul.
               </p>
-              <footer>
+              <footer style={{ textAlign: "right", fontSize: "1.25rem" }}>
                 <small>
                   Psalm 23: 1: 3 , <cite>Holy Bible, ESV®, 2001</cite>
                 </small>

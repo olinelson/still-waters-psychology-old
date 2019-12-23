@@ -71,7 +71,7 @@ export default function Services() {
           As a team the client and therapist work together so achieve each
           client’s personal therapy goals.
         </p>
-        <Image fluid src='images/image_10.jpg' />
+        <Image fluid src='images/Image_19_Hands.jpg' />
 
         <h4>Therapeutic approaches</h4>
 
@@ -98,24 +98,20 @@ export default function Services() {
         <p>
           You can attend as a private client (no referral required), paying a
           fee per session. You may be eligible for a rebate from your private
-          health insurance fund (e.g. BUPA, Medibank etc). An item code would be
-          required to make such a claim. It is recommended that clients pursuing
-          a health fund reimbursement contact their health fund to obtain the
-          correct item code for a 50-minute psychology session so the code can
-          be included on receipts.
+          health insurance fund (e.g. BUPA, Medibank etc). Please bring your
+          health fund card to each session.
         </p>
 
         <p>
           You can attend as a Medicare client, under a Treatment Plan provided
           by your GP. Where you have a treatment plan, you can be entitled to a
-          Medicare rebate for up to 10 sessions (within a calendar year). You
-          will pay for each session and then make a claim back through Medicare
-          care. When seeking a treatment plan, you will need to provide your GP
-          with the practice details as this needs to be included on the
-          treatment plan referral. A treatment plan is tailored to each client’s
-          unique situation and may include a request for psychoeducation and
-          cognitive-informed therapy. You will need to bring your treatment plan
-          to your first session.
+          Medicare rebate for up to 10 sessions (within a calendar year). Please
+          bring your Medicare card to each session. When seeking a treatment
+          plan, you will need to provide your GP with the practice details as
+          this needs to be included on the treatment plan referral. A treatment
+          plan is tailored to each client’s unique situation and may include a
+          request for psychoeducation and cognitive-informed therapy. You will
+          need to bring your treatment plan to your first session.
         </p>
 
         <p>

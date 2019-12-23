@@ -63,7 +63,7 @@ export default function App() {
                     classNames='page'
                     unmountOnExit
                   >
-                    <div className='page'>
+                    <div className='page' id='scrollableContainer'>
                       <Component />
                       <Footer routes={routes} />
                     </div>

@@ -7,6 +7,8 @@ function SideBarMenuItems(props) {
     <>
       {props.routes.map(r => (
         <Menu.Item
+          key={r.path}
+          style={{ color: "#C2AB6F" }}
           active={props.location.pathname === r.path}
           as={Link}
           to={r.path}
