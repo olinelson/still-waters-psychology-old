@@ -1018,7 +1018,7 @@ export default function Research() {
         <Responsive
           as={Tab}
           menu={{
-            fluid: true,
+            // fluid: true,
             stackable: true,
             vertical: false
           }}
@@ -1029,7 +1029,7 @@ export default function Research() {
         <Responsive
           as={Tab}
           menu={{
-            fluid: true,
+            // fluid: true,
             stackable: true,
             vertical: true
           }}
@@ -1039,7 +1039,7 @@ export default function Research() {
         <Responsive
           as={Tab}
           menu={{
-            fluid: true,
+            // fluid: true,
             stackable: true,
             vertical: true
           }}
@@ -1048,7 +1048,7 @@ export default function Research() {
         ></Responsive>
 
         {/* <Tab
-          menu={{ fluid: true, tabular: true, stackable: true, vertical: true }}
+          // menu={{ fluid: true, tabular: true, stackable: true, vertical: true }}
           panes={panes}
         /> */}
       </Container>

@@ -41,11 +41,6 @@ blockquote {
   color: white;
 }
 
-.ui.fluid.vertical.tabular.menu {
-  position: sticky;
-  top: 4rem;
-}
-
 p {
   text-align: justify;
 }
