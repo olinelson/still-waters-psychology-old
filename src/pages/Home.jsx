@@ -38,7 +38,12 @@ function Home() {
       >
         <JumboMessage>
           {/* <JumboHeader size='huge' as={"h1"} inverted></JumboHeader> */}
-          <Image size='large' src='logos/color_logo_no_background.png' />
+          {/* <Image size='large' src='logos/color_logo_no_background.png' /> */}
+          <Image
+            size='large'
+            style={{ opacity: "0.8" }}
+            src='logos/white_logo.png'
+          />
           <Header.Subheader
             style={{ color: "#BEA469", marginLeft: "1.5rem" }}
             as='h3'

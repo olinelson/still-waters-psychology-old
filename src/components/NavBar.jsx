@@ -4,16 +4,16 @@ import styled from "styled-components";
 import { Link, withRouter } from "react-router-dom";
 
 function NavBar(props) {
-  let [transparent, setTransparent] = useState(false);
+  // let [transparent, setTransparent] = useState(true);
 
-  // let container = null;
+  // let container;
 
   // let last_known_scroll_position = 0;
   // let [ticking, setTicking] = useState(false);
 
   // function doSomething(scroll_pos) {
   //   console.log("scrolling", scroll_pos);
-  //   if (scroll_pos > 100) return setTransparent(false);
+  //   if (scroll_pos > 200) return setTransparent(false);
   //   setTransparent(true);
   // }
 
@@ -48,10 +48,6 @@ function NavBar(props) {
     //   rgba(0, 0, 0, 0.3) 40%,
     //   rgba(255, 255, 255, 0) 100%
     // ) !important;
-    //background: ${
-      transparent ? "rgba(0,0,0,0)" : "rgba(255,255,255,.9) !important"
-    };
-    // color: ${transparent ? " white !important!" : ""};
   `;
   const FixedHamburgerMenu = styled(Menu)`
     z-index: 1;
@@ -77,47 +73,39 @@ function NavBar(props) {
           <Icon
             size='big'
             style={{
-              color: "#C2AB6F",
+              color: "#F7F7F7",
               textShadow:
-                "-1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white"
+                "-1px -1px 0 grey, 1px -1px 0 grey, -1px 1px 0 grey, 1px 1px 0 grey"
             }}
+            inverted
             name={props.sideBarIsOpen ? "close" : "bars"}
             onClick={() => props.setVisible(true)}
           />
         </Menu.Item>
       </Responsive>
-      <Responsive
-        secondary
-        inverted={transparent}
-        as={FixedHamburgerMenu}
-        {...Responsive.onlyTablet}
-      >
+      <Responsive secondary as={FixedHamburgerMenu} {...Responsive.onlyTablet}>
         <Menu.Item>
           <Icon
-            size='big'
             style={{
-              color: "#C2AB6F",
+              color: "#F7F7F7",
               textShadow:
-                "-1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white"
+                "-1px -1px 0 grey, 1px -1px 0 grey, -1px 1px 0 grey, 1px 1px 0 grey"
             }}
+            size='big'
             name={props.sideBarIsOpen ? "close" : "bars"}
             onClick={() => props.setVisible(true)}
           />
         </Menu.Item>
       </Responsive>
       <Responsive
-        borderless
-        // inverted
-        // pointing
-        secondary={false}
-        inverted={transparent}
+        // style={{ background: "rgba(0,0,0,0)" }}
+        // secondary={transparent ? true : false}
         as={FixedMenu}
         {...Responsive.onlyComputer}
       >
         {props.routes.map(r => (
           <Menu.Item
             key={r.path}
-            style={{ color: "#C2AB6F" }}
             active={props.location.pathname === r.path}
             as={Link}
             to={r.path}
