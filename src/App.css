@@ -44,6 +44,7 @@ blockquote {
 p {
   text-align: justify;
 }
-.ui.secondary.pointing.menu.item {
-  color: red !important;
+.ui.fluid.vertical.menu {
+  position: sticky !important;
+  top: 4rem;
 }

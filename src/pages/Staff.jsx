@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Jumbotron } from "../components/StyledComponents";
 import { Link } from "react-router-dom";
 import {
@@ -15,7 +15,7 @@ import {
 
 export default function Staff() {
   const [activeItem, setActiveItem] = useState("biography");
-
+  const topOfTabRef = useRef(null);
   const tabRouter = () => {
     switch (activeItem) {
       case "biography":
@@ -37,6 +37,13 @@ export default function Staff() {
         return biography();
     }
   };
+
+  useEffect(() => {
+    document.querySelector("#scrollableContainer").scroll({
+      top: topOfTabRef.current.offsetTop - 60,
+      behavior: "smooth"
+    });
+  }, [activeItem]);
 
   const biography = () => {
     return (
@@ -352,7 +359,7 @@ export default function Staff() {
         fileCount={13}
       ></Jumbotron>
       <Divider hidden />
-
+      <div ref={topOfTabRef} />
       <Container style={{ minHeight: "50vh" }}>
         <Grid stackable>
           <Grid.Column width={4}>
@@ -364,7 +371,6 @@ export default function Staff() {
               >
                 Biography
               </Menu.Item>
-
               <Menu.Item
                 name='qualifications'
                 active={activeItem === "qualifications"}
@@ -372,7 +378,6 @@ export default function Staff() {
               >
                 Qualifications
               </Menu.Item>
-
               <Menu.Item
                 name='memberships'
                 active={activeItem === "memberships"}
@@ -380,7 +385,6 @@ export default function Staff() {
               >
                 Professional Memberships & Registrations
               </Menu.Item>
-
               <Menu.Item
                 name='pastRoles'
                 active={activeItem === "pastRoles"}

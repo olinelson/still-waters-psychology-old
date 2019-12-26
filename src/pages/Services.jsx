@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Jumbotron } from "../components/StyledComponents";
 import {
   Container,
@@ -12,7 +12,7 @@ import {
 
 export default function Services() {
   const [activeItem, setActiveItem] = useState("counselling");
-
+  const topOfTabRef = useRef(null);
   const tabRouter = () => {
     switch (activeItem) {
       case "counselling":
@@ -28,6 +28,13 @@ export default function Services() {
         return counselling();
     }
   };
+
+  useEffect(() => {
+    document.querySelector("#scrollableContainer").scroll({
+      top: topOfTabRef.current.offsetTop - 60,
+      behavior: "smooth"
+    });
+  }, [activeItem]);
 
   const counselling = () => {
     return (
@@ -184,6 +191,8 @@ Maine 1 Photography'
         fileCount={11}
       ></Jumbotron>
       <Divider hidden />
+
+      <div ref={topOfTabRef} />
 
       <Container style={{ minHeight: "50vh" }}>
         <Grid stackable>
