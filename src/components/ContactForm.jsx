@@ -69,7 +69,7 @@ export default function ContactForm() {
         required
         name='message'
         label='Message'
-        placeholder='It Was the Best of Times; It Was the Worst of Times...'
+        placeholder='Type your message here...'
       />
       <Button loading={buttonLoading} disabled={buttonDisabled} type='submit'>
         Send
