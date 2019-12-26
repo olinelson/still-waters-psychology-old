@@ -133,9 +133,9 @@ export const CreditContainer = styled.div`
   padding: 1rem;
   color: white;
   display: flex;
-  align-content: end;
-  justify-content: end;
-  align-items: end;
+  align-content: flex-end;
+  justify-content: flex-end;
+  align-items: flex-end;
 `;
 export const FooterContainer = styled.div`
   height: 40vh;
