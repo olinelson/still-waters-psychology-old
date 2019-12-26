@@ -18,8 +18,7 @@ export default function Staff() {
     { menuItem: "Biography", render: () => biography() },
     { menuItem: "Qualifications", render: () => qualifications() },
     { menuItem: "Memberships", render: () => memberships() },
-    { menuItem: "Past Roles", render: () => pastRoles() },
-    { menuItem: "Research", render: () => research() }
+    { menuItem: "Past Roles", render: () => pastRoles() }
   ];
 
   const biography = () => {
@@ -302,31 +301,6 @@ export default function Staff() {
     );
   };
 
-  const research = () => {
-    return (
-      <>
-        <h1>Research</h1>
-        <p>
-          Engaging in research continues to be an important aspect of my
-          professional life. Currently I am a Senior Research Fellow with the
-          Lumen Research Institute (2017-2020). Previously I have held various
-          formal and adjunct Research Fellow positions (e.g., Griffith
-          University (2011-2012); Central Queensland University (2009-2010);
-          University of Western Sydney (2008)). As a researcher I continue to
-          participate in research collaborations with a range of academic and
-          clinical institutions (e.g., Children’s Hospital at Westmead; Brain
-          and Mind Centre). My own research is focused on spirituality and
-          psychological health; the experiences of those with disability and
-          serious illness and their carers’ needs; sense-making in the context
-          of trauma and loss; and health practitioner professional formation. My
-          research has been published in peer-reviewed journals and book
-          chapters also presenting work at national and international
-          conferences (See below)
-        </p>
-        <h4>Articles</h4>
-      </>
-    );
-  };
   return (
     <>
       <Jumbotron
