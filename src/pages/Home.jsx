@@ -67,14 +67,15 @@ function Home() {
                 style={{ color: "inherit" }}
                 href='https://www.maine1photography.com/'
               >
-                ‘Still Waters’ – Catharine McCann
+                www.maine1photography.com
               </a>
             }
             trigger={
-              <Label color='black'>
-                <Icon size='small' name='image' />
-                credit
-              </Label>
+              <small>‘Still Waters’ – Catharine McCann</small>
+              // <Label basic='very'>
+              //   {/* <Icon size='small' name='image' /> */}
+              //   ‘Still Waters’ – Catharine McCann
+              // </Label>
             }
           />
         </CreditContainer>
