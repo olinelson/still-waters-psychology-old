@@ -1,40 +1,14 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 import { Jumbotron } from "../components/StyledComponents";
-import {
-  Container,
-  Image,
-  Grid,
-  Menu,
-  Divider,
-  Header,
-  List
-} from "semantic-ui-react";
+import { Container, Image, Divider, Tab, Responsive } from "semantic-ui-react";
 
 export default function Services() {
-  const [activeItem, setActiveItem] = useState("counselling");
   const topOfTabRef = useRef(null);
-  const tabRouter = () => {
-    switch (activeItem) {
-      case "counselling":
-        return counselling();
-
-      case "supervision":
-        return supervision();
-
-      case "workshops":
-        return workshops();
-
-      default:
-        return counselling();
-    }
-  };
-
-  useEffect(() => {
-    document.querySelector("#scrollableContainer").scroll({
-      top: topOfTabRef.current.offsetTop - 60,
-      behavior: "smooth"
-    });
-  }, [activeItem]);
+  const panes = [
+    { menuItem: "Counselling", render: () => counselling() },
+    { menuItem: "Supervision", render: () => supervision() },
+    { menuItem: "Workshops", render: () => workshops() }
+  ];
 
   const counselling = () => {
     return (
@@ -192,55 +166,57 @@ Maine 1 Photography'
       ></Jumbotron>
       <Divider hidden />
 
-      <div ref={topOfTabRef} />
-
       <Container style={{ minHeight: "50vh" }}>
-        <Grid stackable>
-          <Grid.Column width={4}>
-            <Menu fluid vertical>
-              <Menu.Item
-                name='counselling'
-                active={activeItem === "counselling"}
-                onClick={() => setActiveItem("counselling")}
-              >
-                <Header as='h4'>Counselling and Psychotherapy</Header>
-                <List>
-                  <List.Item content='Adults of all ages and life stages.' />
-                </List>
-              </Menu.Item>
+        <div ref={topOfTabRef} />
+        <Responsive
+          as={Tab}
+          menu={{
+            fluid: true,
+            stackable: true,
+            vertical: false
+          }}
+          onTabChange={() => {
+            document.querySelector("#scrollableContainer").scroll({
+              top: topOfTabRef.current.offsetTop - 60,
+              behavior: "smooth"
+            });
+          }}
+          panes={panes}
+          {...Responsive.onlyMobile}
+        ></Responsive>
 
-              <Menu.Item
-                name='supervision'
-                active={activeItem === "supervision"}
-                onClick={() => setActiveItem("supervision")}
-              >
-                <Header as='h4'>Clinical Supervision </Header>
-                <List>
-                  <List.Item content='Psychologists' />
-                  <List.Item content='Psychotherapists' />
-                  <List.Item content='Counsellors' />
-                  <List.Item content='Chaplains/Ministers' />
-                </List>
-              </Menu.Item>
-
-              <Menu.Item
-                name='workshops'
-                active={activeItem === "workshops"}
-                onClick={() => setActiveItem("workshops")}
-              >
-                <Header as='h4'>
-                  Professional Development Workshops & Presentations
-                </Header>
-                <List>
-                  <List.Item content='Allied health professionals' />
-                  <List.Item content='Churches staff and leaders' />
-                </List>
-              </Menu.Item>
-            </Menu>
-          </Grid.Column>
-
-          <Grid.Column width={12}>{tabRouter()}</Grid.Column>
-        </Grid>
+        <Responsive
+          as={Tab}
+          menu={{
+            fluid: true,
+            // stackable: true,
+            vertical: true
+          }}
+          panes={panes}
+          onTabChange={() => {
+            document.querySelector("#scrollableContainer").scroll({
+              top: topOfTabRef.current.offsetTop - 60,
+              behavior: "smooth"
+            });
+          }}
+          {...Responsive.onlyTablet}
+        ></Responsive>
+        <Responsive
+          as={Tab}
+          menu={{
+            fluid: true,
+            // stackable: true,
+            vertical: true
+          }}
+          panes={panes}
+          onTabChange={() => {
+            document.querySelector("#scrollableContainer").scroll({
+              top: topOfTabRef.current.offsetTop - 60,
+              behavior: "smooth"
+            });
+          }}
+          {...Responsive.onlyComputer}
+        ></Responsive>
       </Container>
     </>
   );

@@ -2,12 +2,7 @@ import React, { useRef } from "react";
 import { Jumbotron } from "../components/StyledComponents";
 import {
   Container,
-  Image,
-  Grid,
-  Menu,
   Divider,
-  Header,
-  Card,
   Table,
   Label,
   Tab,
@@ -1048,12 +1043,10 @@ export default function Research() {
             vertical: false
           }}
           onTabChange={() => {
-            document
-              .querySelector("#scrollableContainer")
-              .scroll({
-                top: topOfTabRef.current.offsetTop - 60,
-                behavior: "smooth"
-              });
+            document.querySelector("#scrollableContainer").scroll({
+              top: topOfTabRef.current.offsetTop - 60,
+              behavior: "smooth"
+            });
           }}
           panes={panes}
           {...Responsive.onlyMobile}
@@ -1068,12 +1061,10 @@ export default function Research() {
           }}
           panes={panes}
           onTabChange={() => {
-            document
-              .querySelector("#scrollableContainer")
-              .scroll({
-                top: topOfTabRef.current.offsetTop - 60,
-                behavior: "smooth"
-              });
+            document.querySelector("#scrollableContainer").scroll({
+              top: topOfTabRef.current.offsetTop - 60,
+              behavior: "smooth"
+            });
           }}
           {...Responsive.onlyTablet}
         ></Responsive>
@@ -1086,12 +1077,10 @@ export default function Research() {
           }}
           panes={panes}
           onTabChange={() => {
-            document
-              .querySelector("#scrollableContainer")
-              .scroll({
-                top: topOfTabRef.current.offsetTop - 60,
-                behavior: "smooth"
-              });
+            document.querySelector("#scrollableContainer").scroll({
+              top: topOfTabRef.current.offsetTop - 60,
+              behavior: "smooth"
+            });
           }}
           {...Responsive.onlyComputer}
         ></Responsive>

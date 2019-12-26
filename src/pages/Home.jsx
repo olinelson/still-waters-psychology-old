@@ -13,7 +13,8 @@ import {
   List,
   Item,
   Image,
-  Label
+  Label,
+  Responsive
 } from "semantic-ui-react";
 import {
   JumboHeader,
@@ -220,16 +221,32 @@ function Home() {
       <Divider hidden />
 
       <Container text>
-        <Item.Image
+        <Responsive
+          as={Image}
           floated='right'
           size='medium'
           src='images/image_3_mother_child.jpg'
+          {...Responsive.onlyComputer}
         />
+        <Responsive
+          as={Image}
+          floated='right'
+          size='medium'
+          src='images/image_3_mother_child.jpg'
+          {...Responsive.onlyTablet}
+        />
+
         <p>
           The image of ‘still waters’ provides a powerful metaphor of the quiet
           we often long for when faced with demanding lives, a turbulent world,
           personal crisis, and/or a sense that personal growth is required.
         </p>
+        <Responsive
+          as={Image}
+          src='images/image_3_mother_child.jpg'
+          {...Responsive.onlyMobile}
+        />
+        <Divider hidden />
 
         <p>
           Whether alone or in the company of another (e.g., parent, partner,
@@ -249,7 +266,7 @@ function Home() {
 
         <blockquote style={{ color: "black", fontSize: "2rem" }}>
           <Icon size='large' name='quote left' />
-          <p>‘still waters’ is a metaphor for ‘self-regulation’</p>
+          <p>still waters is a metaphor for self-regulation</p>
         </blockquote>
 
         <Divider hidden />
