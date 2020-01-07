@@ -13,9 +13,10 @@ export const Jumbotron = styled.div`
     background-repeat: no-repeat !important;
     background-image: ${props =>
       `url('${BASE_URL}${props.imgDir}${props.fileName}_1.${props.imgFormat}')`};
-     height: ${props => (props.fullHeight ? "90vh !important" : "50vh")};
+     height: ${props => (props.fullHeight ? "90vh !important" : "40vh")};
     image-orientation: from-image;
     display: grid;
+   
 
     @media(min-width: 355px){
         
@@ -70,7 +71,8 @@ export const Jumbotron = styled.div`
          background-image: ${props =>
            props.fileCount >= 10
              ? `url('${BASE_URL}${props.imgDir}${props.fileName}_10.${props.imgFormat}')`
-             : null}
+             : null};
+             
     }
     @media(min-width: 1099px){
         background-image: ${props =>
@@ -82,7 +84,8 @@ export const Jumbotron = styled.div`
          background-image: ${props =>
            props.fileCount >= 12
              ? `url('${BASE_URL}${props.imgDir}${props.fileName}_12.${props.imgFormat}')`
-             : null}
+             : null};
+             
     }
     @media(min-width: 1209px){
         background-image: ${props =>
@@ -106,7 +109,9 @@ export const Jumbotron = styled.div`
          background-image: ${props =>
            props.fileCount >= 16
              ? `url('${BASE_URL}${props.imgDir}${props.fileName}_16.${props.imgFormat}')`
-             : null}
+             : null};
+             
+             margin-top: ${props => (props.fullHeight ? "4rem" : "0")};
     }
     @media(min-width: 1397px){
         background-image: ${props =>

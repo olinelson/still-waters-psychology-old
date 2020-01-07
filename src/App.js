@@ -17,7 +17,7 @@ import NavBar from "./components/NavBar";
 import SideBarMenuItems from "./components/SideBarMenuItems";
 
 // UI
-import { Sidebar, Menu } from "semantic-ui-react";
+import { Sidebar, Menu, Container } from "semantic-ui-react";
 import { CSSTransition } from "react-transition-group";
 
 const routes = [
@@ -55,24 +55,25 @@ export default function App() {
               sideBarIsOpen={visible}
               setVisible={e => setVisible(e)}
             />
-
-            {routes.map(({ path, Component }) => (
-              <Route key={path} exact path={path}>
-                {({ match }) => (
-                  <CSSTransition
-                    in={match != null}
-                    timeout={300}
-                    classNames='page'
-                    unmountOnExit
-                  >
-                    <div className='page' id='scrollableContainer'>
-                      <Component />
-                      <Footer routes={routes} />
-                    </div>
-                  </CSSTransition>
-                )}
-              </Route>
-            ))}
+            <div className='page-container'>
+              {routes.map(({ path, Component }) => (
+                <Route key={path} exact path={path}>
+                  {({ match }) => (
+                    <CSSTransition
+                      in={match != null}
+                      timeout={300}
+                      classNames='page'
+                      unmountOnExit
+                    >
+                      <div className='page' id='scrollableContainer'>
+                        <Component />
+                        <Footer routes={routes} />
+                      </div>
+                    </CSSTransition>
+                  )}
+                </Route>
+              ))}
+            </div>
           </Sidebar.Pusher>
         </Sidebar.Pushable>
       </Route>

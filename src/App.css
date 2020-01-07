@@ -1,7 +1,13 @@
-/* on route change transition */
+html {
+  /* border: 1px solid red; */
+  margin: auto;
+  max-width: 100rem;
+}
+
 .page {
   height: 100vh;
-  overflow-x: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .page-enter {
