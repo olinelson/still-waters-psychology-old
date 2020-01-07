@@ -32,19 +32,19 @@ export default function Staff() {
           src='https://i.pinimg.com/originals/36/51/9e/36519e622b138523a34b9beb29f666b9.jpg'
         /> */}
         <p>
-          My name is Dr Marie-Thérèse Proctor. For more than 25 years, whether
+          My name is Dr Marie-Thérèse Proctor. For more than 20 years, whether
           as a clinician, researcher, educator and academic, I have been
           passionate about enabling and equipping individuals to learn, heal,
-          grow and transform, personally and professionally. I am an AHPRA
-          registered psychologist with Medicare provider rights and Master
-          trained psychotherapist, providing short-term and long-term
+          grow and transform, personally and professionally. I am an PhD
+          trained, AHPRA registered psychologist with Medicare provider rights,
+          and Master trained psychotherapist, providing short-term and long-term
           psychological and psychotherapeutic care to adults of varied ages. In
-          addition, I provide clinical supervision to counsellors,
-          psychotherapists, psychologists and chaplains, with an emphasis on
-          reflective practice, professional formation, growth and maturation.
+          addition, I can provide supervision and mentoring to allied healthcare
+          professionals and chaplains, with an emphasis on reflective practice,
+          professional formation, growth and maturation.
         </p>
         <p>
-          Using a relationally orientated, collaborative approach, I seek to
+          Using a relationally focused, collaborative approach, I seek to
           co-create a safe therapeutic space wherein each client can explore his
           or her sense of well-being and bio-psycho-social and spiritual health.
           I understand the desire to live a full, purposeful and meaningful
@@ -55,7 +55,7 @@ export default function Staff() {
           sustain a healthy and stable sense of self and positive relationships
           with others.
         </p>
-        <p>
+        {/* <p>
           Engaging in research continues to be an important aspect of my
           professional life. Currently I am a Senior Research Fellow with the
           Lumen Research Institute (2017-2020). Previously I have held various
@@ -71,7 +71,7 @@ export default function Staff() {
           research has been published in peer-reviewed journals and book
           chapters also presenting work at national and international
           conferences. See <Link to='/research'>Research</Link>
-        </p>
+        </p> */}
       </>
     );
   };
@@ -81,13 +81,12 @@ export default function Staff() {
       <>
         <h1>Qualifications</h1>
         <p>
-          My clinical work is informed by ongoing professional training and my
-          original academic training. Each year the Psychology Board of
+          My clinical work is informed by ongoing professional development and
+          my original academic training. Each year the Psychology Board of
           Australia requires all psychologists to complete mandatory
-          professional development to ensure psychologists provide their clients
-          with relevant, evidence-based, contemporary psychological care. In
-          training to become a psychologist I completed four higher education
-          degrees.{" "}
+          professional development to ensure clients are provided with relevant,
+          evidence-based, contemporary psychological care. In training to become
+          a psychologist I completed four higher education degrees.
         </p>
         <ul>
           <li>
@@ -110,10 +109,9 @@ export default function Staff() {
         </ul>
 
         <p>
-          In three of these degrees included completion of substantive research
-          theses, which focused on some aspect of spirituality and health (e.g.,
-          spiritual attachment, developmental trauma and adult Christian
-          spirituality):
+          As part of my training I completed substantive research theses, which
+          focused on some aspect of spirituality and health (e.g., spiritual
+          attachment, developmental trauma and adult Christian spirituality):
         </p>
 
         <ul>
@@ -148,18 +146,15 @@ export default function Staff() {
         <p>
           Supporting the professional life of peers and students have been
           important to me. Across the years I have resided on numerous
-          professional and external academic committees (e.g., Christian
-          Counsellors Association Australia (CCAA) NSW Executive Committee; CCAA
-          National Executive; Booth College (Salvation Army); Australian
-          Colleges of Ministries (ACOM)) and varied internal academic committees
-          within the institutions with whom I have worked. Currently I am a
-          member of the Psychotherapy and Counselling Federation of Australian
-          (PACFA) Education Accreditation Committee (EPAC), sitting on various
-          of their course accreditation panels.
+          professional and external academic committees and internal academic
+          committees within the institutions with whom I have worked. Currently
+          I am a member of the Psychotherapy and Counselling Federation of
+          Australian (PACFA) Education Accreditation Committee (EPAC), sitting
+          on various of their course accreditation panels.
         </p>
         <p>
-          I hold a range of professional association memberships and provider
-          rights:
+          Current professional association memberships and provider rights
+          include:
         </p>
         <ol>
           <li>
@@ -263,7 +258,7 @@ export default function Staff() {
           Conference (ACC) (2017)
         </p>
         <Divider hidden />
-        <Image src='images/Image_13_Water_drop_3.jpg' />
+        <Image size='large' centered src='images/Image_13_Water_drop_3.jpg' />
 
         <Divider hidden />
         <p>
@@ -285,6 +280,9 @@ export default function Staff() {
           counselling sector and the development of next generation of Christian
           counsellors.{" "}
         </p>
+        <Divider hidden />
+        <Image size='large' centered src='images/Image_15_Water_drop_5.jpg' />
+        <Divider hidden />
 
         <p>
           Prior to Excelsia College, I worked for the Christian’s Hospital at

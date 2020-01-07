@@ -35,7 +35,7 @@ export default function App() {
   return (
     <Router>
       <Route>
-        <Sidebar.Pushable as='div'>
+        <Sidebar.Pushable as='div' className='page-container'>
           <Sidebar
             as={Menu}
             animation='push'
@@ -55,25 +55,23 @@ export default function App() {
               sideBarIsOpen={visible}
               setVisible={e => setVisible(e)}
             />
-            <div className='page-container'>
-              {routes.map(({ path, Component }) => (
-                <Route key={path} exact path={path}>
-                  {({ match }) => (
-                    <CSSTransition
-                      in={match != null}
-                      timeout={300}
-                      classNames='page'
-                      unmountOnExit
-                    >
-                      <div className='page' id='scrollableContainer'>
-                        <Component />
-                        <Footer routes={routes} />
-                      </div>
-                    </CSSTransition>
-                  )}
-                </Route>
-              ))}
-            </div>
+            {routes.map(({ path, Component }) => (
+              <Route key={path} exact path={path}>
+                {({ match }) => (
+                  <CSSTransition
+                    in={match != null}
+                    timeout={300}
+                    classNames='page'
+                    unmountOnExit
+                  >
+                    <div className='page' id='scrollableContainer'>
+                      <Component />
+                      <Footer routes={routes} />
+                    </div>
+                  </CSSTransition>
+                )}
+              </Route>
+            ))}
           </Sidebar.Pusher>
         </Sidebar.Pushable>
       </Route>

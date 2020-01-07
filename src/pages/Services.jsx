@@ -43,16 +43,16 @@ export default function Services() {
         </ul>
         <p>
           More broadly, counselling involves an active, collaborative,
-          conversational partnership, where the therapist works for the benefit
-          of each client, individual circumstances considered within a a
+          conversational partnership, wherein the therapist works for the
+          benefit of each client, individual circumstances considered within a
           developmentally oriented, lifespan perspective. Drawing upon
           contemporary evidence-based, trauma-informed models of care, there is
           an overall focus on client safety, symptom stabilization and
           management, recovery and integration, restoration and transformation.
-          As a team the client and therapist work together to achieve each
+          As a team, the client and therapist work together to achieve each
           client’s personal therapy goals.
         </p>
-        <Image fluid src='images/Image_19_Hands.jpg' />
+        <Image fluid size='large' centered src='images/Image_19_Hands.jpg' />
 
         <h4>Therapeutic approaches</h4>
 
@@ -64,8 +64,28 @@ export default function Services() {
           something new. This may leave you feeling unsure. It is important to
           ask questions if anything seems unclear and to provide regular
           feedback, so your counselling continues to effectively address your
-          life issues and therapeutic aims.
+          life issues and therapeutic aims. The approach(es) used during your
+          therapy will be determined by your needs and goals. Some of the
+          clinical approaches used may include:
         </p>
+
+        <ul>
+          <li>
+            trauma informed models such as the Conversational Model and
+            Sensorimotor Therapies
+          </li>
+          <li>
+            cognitive therapies such as Acceptance and Commitment Therapy (ACT)
+          </li>
+          <li>
+            relational models such as Person-Centred Counselling and
+            Attachment-focused Therapies
+          </li>
+          <li>
+            models that consider the deeper elements of personal experience,
+            such as Psychodynamic Psychotherapy.
+          </li>
+        </ul>
 
         <p>
           At Still Waters Psychology clinical approaches used may include the
@@ -116,7 +136,7 @@ export default function Services() {
         <h1>Clinical Supervision</h1>
         <p>
           En gaging in continued reflection about one’s clinical work is a
-          requirement for all healthcare professionals and those working withing
+          requirement for all healthcare professionals and those working within
           church settings. Consequently, your therapist participates in regular
           supervision with experienced peers, to ensure the continuance of
           quality and relevant care to all clients. Peer supervision using
@@ -124,13 +144,12 @@ export default function Services() {
           professional development psychologists must complete annually.
         </p>
         <p>
-          In addition, Still Waters Psychology offers individual and group
-          supervision to psychologists, counsellors, psychotherapists and those
-          working in church settings (excluding intern psychologists).
-          Supervisees are recommended to check with their professional
-          association regarding the required qualifications and experiences for
-          supervisors as associations set their own criteria regarding
-          supervision.
+          In addition, Still Waters Psychology can offer individual and group
+          supervision to allied healthcare professionals and those working in
+          church settings. Supervisees are recommended to check with their
+          professional association regarding the required qualifications and
+          experiences for supervisors as associations set their own criteria
+          regarding supervision.
         </p>
       </>
     );

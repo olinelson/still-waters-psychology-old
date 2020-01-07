@@ -35,10 +35,8 @@ export default function FAQS() {
     },
     {
       key: "4",
-      title: "Transport Options",
-      content: ["Parking is readily available, with wheelchair access."].join(
-        " "
-      )
+      title: "Parking Options",
+      content: ["Parking is readily available"].join(" ")
     },
     {
       key: "5",

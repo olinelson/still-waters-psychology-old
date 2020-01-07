@@ -152,10 +152,10 @@ function Home() {
         </p>
 
         <p>
-          We also provide clinical supervision and professional development
-          workshops and presentations for allied health professionals,
-          chaplains, minsters and church leaders (See{" "}
-          <Link to='/services'>Services</Link> page for more details).
+          We can also provide clinical supervision and professional development
+          workshops for allied health professionals, chaplains, minsters and
+          church leaders (See <Link to='/services'>Services</Link> page for more
+          details).
         </p>
       </Container>
 
@@ -266,8 +266,10 @@ function Home() {
         <Divider />
 
         <blockquote style={{ color: "black", fontSize: "2rem" }}>
-          <Icon size='large' name='quote left' />
-          <p>still waters is a metaphor for self-regulation</p>
+          {/* <Icon size='large' name='quote left' /> */}
+          <p style={{ textAlign: "center" }}>
+            still waters is a metaphor for self-regulation
+          </p>
         </blockquote>
 
         <Divider hidden />
@@ -278,7 +280,7 @@ function Home() {
           thoughts and feelings, it is easy to become overwhelmed and
           distressed, unable to acts in ways aligned to one’s personal and
           professional values and beliefs. At these times it can feel like we
-          are caught in a choppy ocean, at the mercy of the waves that buffet
+          are caught on a choppy ocean, at the mercy of the waves that buffet
           us. Therapy provided in a caring, secure and supportive context allows
           the individual to safely explore and address issues currently
           affecting his/her life.
@@ -293,7 +295,9 @@ function Home() {
           In the opening verses of Psalm 23 (1-3), Christian believers are told
           that restoration of the soul comes in the context of ‘green pastures’
           and ‘still waters’ – the Divine drawing the weary and the wounded to a
-          quiet place where restoration is possible.
+          quiet place where restoration is possible. Therapy that takes into
+          consideration one’s worldview helps individuals address life issues in
+          ways that align with their life values.
         </p>
 
         <Divider hidden />
@@ -309,7 +313,7 @@ function Home() {
         <JumboMessage style={{ width: "90vw" }}>
           <Segment basic>
             <blockquote cite='https://www.huxley.net/bnw/four.html'>
-              <Icon size='large' name='quote left' />
+              {/* <Icon size='large' name='quote left' /> */}
               <p style={{ fontSize: "2rem" }}>
                 The Lord is my shepherd; I shall not want. He makes me lie down
                 in green pastures. He leads me beside still waters. He restores

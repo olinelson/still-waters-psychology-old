@@ -14,12 +14,12 @@ import {
 
 export default function Contact() {
   const panels = [
-    {
-      key: "0",
-      title: "Wheelchair Accessibility",
-      content:
-        "There is wheelchair access at the front entry to the practice and wheelchair accessible toilet facilities."
-    },
+    // {
+    //   key: "0",
+    //   title: "Wheelchair Accessibility",
+    //   content:
+    //     "There is wheelchair access at the front entry to the practice and wheelchair accessible toilet facilities."
+    // },
     {
       key: "1",
       title: "Late Arrival Policy",
@@ -46,31 +46,29 @@ export default function Contact() {
             </p>
             <ul>
               <li>
-                A 75% cancellation fee will be applied when clients cancel
+                A 60% cancellation fee will be applied when clients cancel
                 within 24 hours of their appointment.
               </li>
               <li>
-                A 50% cancellation fee will be applied when clients cancel
+                A 40% cancellation fee will be applied when clients cancel
                 within 48 hours of their appointment.
               </li>
             </ul>
 
             <p>
-              When cancelling a session please advise as to the reason for the
+              When cancelling a session, please advise as to the reason for the
               cancellation. Please note Medicare do not reimburse cancelled
-              session and the NDIS cover a limited number of cancellation fees.
+              fees, while the NDIA cover a limited number of cancellation fees.
               If you have concerns about this policy, please discuss them with
               your therapist.
             </p>
-            <p>
-              Please note Medicare do not reimburse cancelled sessions while the
-              NDIS cover only a limited number of cancellation fees.
-            </p>
+
             <p>
               There are rare occasions when, with regret, your therapist needs
               to cancel a session due to unexpected circumstances. Where this
-              occurs you will be offered a replacement appointment at a mutually
-              convenient time, at the normal session fee.
+              occurs, you will be offered a replacement appointment at a
+              mutually convenient time, at the normal session fee. We apologise
+              for any inconvenience arising from these rare occasions.
             </p>
           </>
         )
@@ -124,7 +122,8 @@ export default function Contact() {
           The practice is located just off Narellan Road, Narellan. It is housed
           within the Narellan Community Congregational Church. Upon arrival,
           please enter the church foyer and turn left to find the practice
-          reception area.
+          reception area. Please make yourself comfortable in the waiting area.
+          Please note the church reception desk is not always occupied.
         </p>
 
         <Embed

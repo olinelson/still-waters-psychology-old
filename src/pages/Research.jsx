@@ -33,7 +33,7 @@ export default function Research() {
                 Cleary, M., & McLean L. Insecure adult attachment style is
                 associated with elevated psychological symptoms in early
                 adjustment to severe burn injury: A cross sectional study.
-                Accepted for publication in BURNS, 3/19.
+                Burns, 45 (6), 1359-1366. DOI: doi:10.1016/j.burns.2019.03.011
               </Table.Cell>
             </Table.Row>
 
@@ -42,24 +42,11 @@ export default function Research() {
                 <Label ribbon>2018</Label>
               </Table.Cell>
               <Table.Cell>
-                Proctor, M-T., Cleary, M., Kornhaber, R., & McLean, L. (in
-                press). Christians with chronic complex trauma and
-                relationally-focused spiritual difficulties: A Conversational
-                Model perspective. To be published in The Journal of
-                Spirituality in Mental Health.
-              </Table.Cell>
-            </Table.Row>
-
-            <Table.Row verticalAlign='top'>
-              <Table.Cell>
-                <Label ribbon>2016</Label>
-              </Table.Cell>
-              <Table.Cell>
-                Proctor, M-T., Cleary, M., Kornhaber, R., & McLean, L. (in
-                press). Christians with chronic complex trauma and
-                relationally-focused spiritual difficulties: A Conversational
-                Model perspective. To be published in The Journal of
-                Spirituality in Mental Health.
+                Proctor, M-T., Cleary, M., Kornhaber, R., & McLean, L. (2019).
+                Christians with chronic complex trauma and relationally-focused
+                spiritual difficulties: A Conversational Model perspective.
+                Journal of Spirituality in Mental Health, 21 (2), pp. 1-34. DOI:
+                10.1080/19349637.2018.1460228.
               </Table.Cell>
             </Table.Row>
 
@@ -163,7 +150,7 @@ export default function Research() {
               and spiritual health and well being in student actors. In Miner,
               M. & Dowson, M. (Eds.) Creativity and Spirituality: A
               multidisciplinary perspective. Charlotte, North Carolina:
-              Information Age Publishing
+              Information Age Publishing.
             </Table.Cell>
           </Table.Row>
 
@@ -172,17 +159,22 @@ export default function Research() {
               <Label ribbon>2013</Label>
             </Table.Cell>
             <Table.Cell>
-              McLean, L., Proctor, M-T., Rogers. V., Shaw, J., Kwiet, J.,
-              Streimer, J., Vandervord, J., & Kasia Kowlowska, K. (2013). Secure
-              Attachment To God And A Secure/Comfortable Attachment Organization
-              May Promote Healthy Recovery From Severe Burns Injury. Chapter 10.
-              In John L. Hochheimer & Jane Fernandez-Goldborough (Eds),
-              Spirituality in the 21st Century: Conversation. Inter-Disciplinary
-              Press. McLean, L., & Proctor, M-T. (2013). The pilgrim road to
-              human flourishing: When the psychotherapeutic and the spiritual
-              journey meet. In M. H. Miner, M. Dowson & S. Devenish (Eds).
-              Beyond well -being: Spirituality and Human Flourishing,
-              Information Age Press: Charlotte, NC.
+              <p>
+                McLean, L., Proctor, M-T., Rogers. V., Shaw, J., Kwiet, J.,
+                Streimer, J., Vandervord, J., & Kasia Kowlowska, K. (2013).
+                Secure Attachment To God And A Secure/Comfortable Attachment
+                Organization May Promote Healthy Recovery From Severe Burns
+                Injury. Chapter 10. In John L. Hochheimer & Jane
+                Fernandez-Goldborough (Eds), Spirituality in the 21st Century:
+                Conversation. Inter-Disciplinary Press.{" "}
+              </p>
+              <p>
+                McLean, L., & Proctor, M-T. (2013). The pilgrim road to human
+                flourishing: When the psychotherapeutic and the spiritual
+                journey meet. In M. H. Miner, M. Dowson & S. Devenish (Eds).
+                Beyond well -being: Spirituality and Human Flourishing,
+                Information Age Press: Charlotte, NC.
+              </p>
             </Table.Cell>
           </Table.Row>
 
@@ -191,27 +183,32 @@ export default function Research() {
               <Label ribbon>2012</Label>
             </Table.Cell>
             <Table.Cell>
-              Proctor M-T, McLean L, Miner-Bridges M, Dowson M, Devenish S.
-              (2012). Exploring the Psycho-Spiritual construct ‘Attachment to
-              God’: The contribution of Australian researchers. Peer-reviewed
-              paper presented at the Spirituality in the 21st Century: At the
-              Interface of Theory, Praxis and Pedagogy 1st Global Conference,
-              Prague, Czech Republic, March 2011, an E-book Chapter of
-              conference proceedings in Martin Fowler, John D. Martin III and
-              John L. Hochheimer (Eds). Spirituality: Theory, Praxis and
-              Pedagogy,.Inter-Disciplinary Press: Oxford, UK.
-              https://www.interdisciplinarypress.net/online-store/ebooks/ethos-and-modern-life/spirituality-theory-praxis-and-pedagogy
-              ). McLean L, Proctor M-T, Kwiet J, Streimer J, Vandervord J, Shaw
-              J, Kowlowska, K. (2012). Secure attachment to God and a secure/
-              comfortable attachment organization may both promote healthy
-              recovery from severe burns injury. Peer-reviewed paper presented
-              at the Spirituality in the 21st Century: At the Interface of
-              Theory, Praxis and Pedagogy 1st Global Conference, Prague, Czech
-              Republic, March 2011, and E-book Chapter of conference proceedings
-              in Martin Fowler, John D. Martin III and John L. Hochheimer (Eds).
-              Spirituality: Theory, Praxis and Pedagogy, 2012.Inter-Disciplinary
-              Press: Oxford, UK.
-              https://www.interdisciplinarypress.net/online-store/ebooks/ethos-and-modern-life/spirituality-theory-praxis-and-pedagogy).
+              <p>
+                Proctor M-T, McLean L, Miner-Bridges M, Dowson M, Devenish S.
+                (2012). Exploring the Psycho-Spiritual construct ‘Attachment to
+                God’: The contribution of Australian researchers. Peer-reviewed
+                paper presented at the Spirituality in the 21st Century: At the
+                Interface of Theory, Praxis and Pedagogy 1st Global Conference,
+                Prague, Czech Republic, March 2011, an E-book Chapter of
+                conference proceedings in Martin Fowler, John D. Martin III and
+                John L. Hochheimer (Eds). Spirituality: Theory, Praxis and
+                Pedagogy,.Inter-Disciplinary Press: Oxford, UK.
+                https://www.interdisciplinarypress.net/online-store/ebooks/ethos-and-modern-life/spirituality-theory-praxis-and-pedagogy
+                ).
+              </p>
+              <p>
+                McLean L, Proctor M-T, Kwiet J, Streimer J, Vandervord J, Shaw
+                J, Kowlowska, K. (2012). Secure attachment to God and a secure/
+                comfortable attachment organization may both promote healthy
+                recovery from severe burns injury. Peer-reviewed paper presented
+                at the Spirituality in the 21st Century: At the Interface of
+                Theory, Praxis and Pedagogy 1st Global Conference, Prague, Czech
+                Republic, March 2011, and E-book Chapter of conference
+                proceedings in Martin Fowler, John D. Martin III and John L.
+                Hochheimer (Eds). Spirituality: Theory, Praxis and Pedagogy,
+                2012.Inter-Disciplinary Press: Oxford, UK.
+                https://www.interdisciplinarypress.net/online-store/ebooks/ethos-and-modern-life/spirituality-theory-praxis-and-pedagogy).
+              </p>
             </Table.Cell>
           </Table.Row>
 
@@ -299,17 +296,25 @@ export default function Research() {
               <Label ribbon>2009</Label>
             </Table.Cell>
             <Table.Cell>
-              Proctor, M.T. (2009). Conversations about God: Spirituality and
-              qualitative research approaches not so strange bedfellows. AQM
-              2008 Conference Abstracts. International Journal of Qualitative
-              Methods, 8 (3), 17. Proctor, M.T. (2009). “On the outside looking
-              in”: Reflections on working with vulnerable populations and with
-              challenging topics. AQM 2008 Conference Abstracts. International
-              Journal of Qualitative Methods, 8 (3), 26. Proctor, M.T., Stevens.
-              M., Nagy, S., Lord, B., & O’Riordan, E. (2009). Giving ‘voice’ to
-              families’ experiences of living with a paediatric life-limiting
-              conditions: An Australian story. QHR 2008 Conference Abstracts.
-              International Journal of Qualitative Methods, 8 (3), 6.
+              <p>
+                Proctor, M.T. (2009). Conversations about God: Spirituality and
+                qualitative research approaches not so strange bedfellows. AQM
+                2008 Conference Abstracts. International Journal of Qualitative
+                Methods, 8 (3), 17.{" "}
+              </p>
+              <p>
+                Proctor, M.T. (2009). “On the outside looking in”: Reflections
+                on working with vulnerable populations and with challenging
+                topics. AQM 2008 Conference Abstracts. International Journal of
+                Qualitative Methods, 8 (3), 26.{" "}
+              </p>
+              <p>
+                Proctor, M.T., Stevens. M., Nagy, S., Lord, B., & O’Riordan, E.
+                (2009). Giving ‘voice’ to families’ experiences of living with a
+                paediatric life-limiting conditions: An Australian story. QHR
+                2008 Conference Abstracts. International Journal of Qualitative
+                Methods, 8 (3), 6.
+              </p>
             </Table.Cell>
           </Table.Row>
           <Table.Row verticalAlign='top'>
@@ -382,7 +387,7 @@ export default function Research() {
               <Label ribbon>2018</Label>
             </Table.Cell>
             <Table.Cell>
-              Proctor, M-T. (2018). Invited Key-Note speaker (3 session),
+              Proctor, M-T. (2018). Invited Key-Note speaker (3 sessions),
               BaptistCare Chaplaincy Conference, October 10, 2018, Sydney.
             </Table.Cell>
           </Table.Row>
@@ -392,7 +397,7 @@ export default function Research() {
               <Label ribbon>2018</Label>
             </Table.Cell>
             <Table.Cell>
-              Proctor M-T. (2018). Invited speaker Human and Spiritual
+              Proctor M-T. (2018). Invited speaker, Human and Spiritual
               Attachment PD workshops. Soul Care Australia, Canberra Branch,
               April 21, 2018.
             </Table.Cell>
@@ -459,7 +464,7 @@ export default function Research() {
               <Label ribbon>2007</Label>
             </Table.Cell>
             <Table.Cell>
-              Nagy, S., & Proctor, M-T (2007) Using computer assisted
+              Nagy, S., & Proctor, M-T (2007). Using computer assisted
               qualitative data analysis software: From simple to complex.
               Research workshop (by invitation) presented at the University of
               Technology, Faculty of Nursing, Midwifery and Health - Faculty
@@ -736,17 +741,21 @@ export default function Research() {
               <Label ribbon>2007</Label>
             </Table.Cell>
             <Table.Cell>
-              Proctor, M-T., Lord, B., Stevens, M., Nagy, S., & O’Riordan, E.
-              (2007). Waiting to be heard: Perspectives and experiences of
-              fathers from families caring for children with life-limiting
-              condition. Paper presented at the 2007 Social Work Seminar:
-              Bringing research to social work practice, The Children’s Hospital
-              at Westmead, November, 2007.Stevens, M., Proctor, M-T., Nagy, S.,
-              Lord, B., & O’Riordan, E. (2007). Families caring for children
-              with a life-limiting condition: Researching vulnerable paediatric
-              populations’. Paper presented at the 2007 Palliative Care
-              Symposium, The Children’s Hospital at Westmead, Sydney, March,
-              2007.
+              <p>
+                Proctor, M-T., Lord, B., Stevens, M., Nagy, S., & O’Riordan, E.
+                (2007). Waiting to be heard: Perspectives and experiences of
+                fathers from families caring for children with life-limiting
+                condition. Paper presented at the 2007 Social Work Seminar:
+                Bringing research to social work practice, The Children’s
+                Hospital at Westmead, November, 2007.
+              </p>
+              <p>
+                Stevens, M., Proctor, M-T., Nagy, S., Lord, B., & O’Riordan, E.
+                (2007). Families caring for children with a life-limiting
+                condition: Researching vulnerable paediatric populations’. Paper
+                presented at the 2007 Palliative Care Symposium, The Children’s
+                Hospital at Westmead, Sydney, March, 2007.
+              </p>
             </Table.Cell>
           </Table.Row>
 
@@ -913,13 +922,19 @@ export default function Research() {
               <Label ribbon>2011</Label>
             </Table.Cell>
             <Table.Cell>
-              McLean. L., Kwiet, J., Rogers, V., Streimer, J., Vandervord, J.,
-              Shaw, J., & Proctor M-T. (2011). Adjustment to burns and
-              contributions from attachment: early interview data and correlates
-              with coping style. ANZBA Conference, Brisbane, Oct 4-7,
-              2011.McLean, L., Proctor, M-T., & Kowloska, K. (2011). Changing
-              minds, changing bodies: Attachment as a model for biopsychosocial
-              medicine. Hospital Week, Westmead Hospital, Sept 13-16, 2011.
+              <p>
+                McLean. L., Kwiet, J., Rogers, V., Streimer, J., Vandervord, J.,
+                Shaw, J., & Proctor M-T. (2011). Adjustment to burns and
+                contributions from attachment: early interview data and
+                correlates with coping style. ANZBA Conference, Brisbane, Oct
+                4-7, 2011.
+              </p>
+              <p>
+                McLean, L., Proctor, M-T., & Kowloska, K. (2011). Changing
+                minds, changing bodies: Attachment as a model for
+                biopsychosocial medicine. Hospital Week, Westmead Hospital, Sept
+                13-16, 2011.
+              </p>
             </Table.Cell>
           </Table.Row>
 
@@ -1018,21 +1033,15 @@ export default function Research() {
       <Container>
         <h1>Research</h1>
         <p>
-          Engaging in research continues to be an important aspect of my
-          professional life. Currently I am a Senior Research Fellow with the
-          Lumen Research Institute (2017-2020). Previously I have held various
-          formal and adjunct Research Fellow positions (e.g., Griffith
-          University (2011-2012); Central Queensland University (2009-2010);
-          University of Western Sydney (2008)). As a researcher I continue to
-          participate in research collaborations with a range of academic and
-          clinical institutions (e.g., Children’s Hospital at Westmead; Brain
-          and Mind Centre). My own research is focused on spirituality and
-          psychological health; the experiences of those with disability and
-          serious illness and their carers’ needs; sense-making in the context
-          of trauma and loss; and health practitioner professional formation. My
-          research has been published in peer-reviewed journals and book
-          chapters also presenting work at national and international
-          conferences (See below)
+          Engaging in research is an important aspect of academic life. Below
+          are listed publications and presentations arising from this work (both
+          sole research and research in collaboration with others), some of
+          which has focused on spirituality and psychological health; the
+          experiences of those with disability and serious illness and their
+          carers’ needs; sense-making in the context of trauma and loss; and
+          health practitioner professional formation. I continue to research via
+          a range of research collaborations, including as Senior Research
+          Fellow with the Lumen Research Institute (2017-2020).
         </p>
         <div ref={topOfTabRef} />
         <Responsive
